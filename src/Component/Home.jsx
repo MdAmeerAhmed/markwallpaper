@@ -164,10 +164,10 @@ function Home() {
             <div className="row pt-md-0 pt-5">
                 <div className="col-lg-4 col-md-6 mt-md-0 mt-sm-4 px-lg-0">
                     <div className="grids3-info position-relative">
-                        <a href="#" className="d-block zoom"><img src="assets/images/g8.jpg" alt="" className="img-fluid news-image"/></a>
+                        <a href="/" className="d-block zoom"><img src="assets/images/g8.jpg" alt="" className="img-fluid news-image"/></a>
                         <div className="w3-grids3-info">
                             <h6><a href="#category" className="category d-block">Living</a></h6>
-                            <h4><a href="#">Meet the new wallpaper artistry</a></h4>
+                            <h4><a href="/">Meet the new wallpaper artistry</a></h4>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@ function Home() {
                         <a href="blog-single.html" className="d-block zoom"><img src="assets/images/g2.jpg" alt="" className="img-fluid news-image"/></a>
                         <div className="w3-grids3-info second">
                             <h6><a href="#category" className="category d-block">Designs</a></h6>
-                            <h4><a href="#">Wallpapers that reflect your style</a></h4>
+                            <h4><a href="/">Wallpapers that reflect your style</a></h4>
 
                         </div>
                     </div>
@@ -185,8 +185,8 @@ function Home() {
                     <div className="grids3-info position-relative">
                         <a href="blog-single.html" className="d-block zoom"><img src="assets/images/g4.jpg" alt="" className="img-fluid news-image"/></a>
                         <div className="w3-grids3-info">
-                            <h6><a href="#category" className="category d-block">Innovative</a></h6>
-                            <h4><a href="#">Innovative wallpaper ideas for every space</a></h4>
+                            <h6><a href="/" className="category d-block">Innovative</a></h6>
+                            <h4><a href="/">Innovative wallpaper ideas for every space</a></h4>
                         </div>
                     </div>
                 </div>
@@ -258,7 +258,7 @@ function Home() {
                     </a>
                     {/* <!-- dialog itself, mfp-hide class is required to make dialog hidden --> */}
                     <div id="small-dialog1" className="zoom-anim-dialog mfp-hide">
-                        <iframe src="https://player.vimeo.com/video/444201456" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                        <iframe src="https://player.vimeo.com/video/444201456" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="video"></iframe>
                     </div>
                 </div>
             </div>

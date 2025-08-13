@@ -119,25 +119,25 @@ const Wallpaper = () => {
             <div className="col-md-6 col-lg-3">
               <div className="srvce">
                 <img src="assets/images/2d.jfif" alt="2D Wallpaper" />
-                <h4><a href="#">2D Wallpaper</a></h4>
+                <h4><a href="/">2D Wallpaper</a></h4>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
               <div className="srvce">
                 <img src="assets/images/3d.jfif" alt="3D Wallpaper" />
-                <h4><a href="#">3D Wallpaper</a></h4>
+                <h4><a href="/">3D Wallpaper</a></h4>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
               <div className="srvce sr-n-min-hgt-530">
                 <img src="assets/images/5d.jpg" alt="5D Wallpaper" />
-                <h4><a href="#">5D Wallpaper</a></h4>
+                <h4><a href="/">5D Wallpaper</a></h4>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
               <div className="srvce sr-n-min-hgt-530">
                 <img src="assets/images/custom.jfif" alt="Customized Wallpaper" />
-                <h4><a href="#">Customized Wallpaper</a></h4>
+                <h4><a href="/">Customized Wallpaper</a></h4>
               </div>
             </div>
           </div>

@@ -40,7 +40,7 @@ function Services() {
                     <div className="col-lg-6 cwp23-text mt-lg-0 mt-5 ps-lg-5">
                         <div className="imgw3l-ab w3l-news">
                             <div className="grids5-info">
-                                <a href="#" className="d-block zoom"><img src="assets/images/g8.jpg" alt="" className="img-fluid radius-image"/></a>
+                                <a href="/" className="d-block zoom"><img src="assets/images/g8.jpg" alt="" className="img-fluid radius-image"/></a>
                             </div>
                         </div>
                     </div>

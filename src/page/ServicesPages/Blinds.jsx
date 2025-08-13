@@ -120,37 +120,37 @@ const Blinds = () => {
             <div className="col-md-6 col-lg-3">
               <div className="srvce">
                 <img src="assets/images/curtains.jpg" alt="Curtains" />
-                <h4><a href="#">Curtains</a></h4>
+                <h4><a href="/">Curtains</a></h4>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
               <div className="srvce">
                 <img src="assets/images/roller.jpg" alt="Roller" />
-                <h4><a href="#">Roller</a></h4>
+                <h4><a href="/">Roller</a></h4>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
               <div className="srvce sr-n-min-hgt-530">
                 <img src="assets/images/zebra.jpg" alt="Zebra" />
-                <h4><a href="#">Zebra</a></h4>
+                <h4><a href="/">Zebra</a></h4>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
               <div className="srvce sr-n-min-hgt-530">
                 <img src="assets/images/roman.gif" alt="Roman" />
-                <h4><a href="#">Roman</a></h4>
+                <h4><a href="/">Roman</a></h4>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
               <div className="srvce sr-n-min-hgt-530">
                 <img src="assets/images/venetian.jpg" alt="Venetian" />
-                <h4><a href="#">Venetian</a></h4>
+                <h4><a href="/">Venetian</a></h4>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
               <div className="srvce sr-n-min-hgt-530">
                 <img src="assets/images/pvc.jpg" alt="Customized Wallpaper" />
-                <h4><a href="#">PVC</a></h4>
+                <h4><a href="/">PVC</a></h4>
               </div>
             </div>
           </div>
