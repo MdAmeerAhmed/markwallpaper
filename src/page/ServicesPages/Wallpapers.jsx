@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import './Wallpapers.css'; // We'll create this CSS file next
 import { NavLink } from 'react-router-dom';
 import Contact from '../../Component/Contact';

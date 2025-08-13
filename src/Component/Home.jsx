@@ -273,7 +273,7 @@ function Home() {
                 <div className="row w3l-passion-mid-grids">
                     <div className="col-lg-6 passion-grid-item-info pe-lg-5 mb-lg-0 mb-5">
 
-                        <div className="content-8-img"><img src="assets/images/ab1.jpg" className="img-fluid radius-image" alt=""/></div>
+                        <div className="content-8-img"><img src="assets/images/ab1.jpg" className="img-fluid radius-image" alt="Offer"/></div>
                     </div>
                     <div className="col-lg-6 w3hny-passion-item w3l-content-8">
                         <h6 className="title-subw3hny mb-1">What We Offer</h6>
@@ -502,7 +502,7 @@ function Home() {
                         <div className="card">
                             <div className="card-header p-0 position-relative border-0">
                                 <a href="blog-single.html">
-                                    <img className="card-img-bottom d-block radius-image" src="assets/images/g8.jpg" alt="Card image cap"/>
+                                    <img className="card-img-bottom d-block radius-image" src="assets/images/g8.jpg" alt="Card cap"/>
                                 </a>
                             </div>
                             <div className="card-body p-0 blog-details">
@@ -519,7 +519,7 @@ function Home() {
                         <div className="card">
                             <div className="card-header p-0 position-relative border-0">
                                 <a href="blog-single.html">
-                                    <img className="card-img-bottom d-block radius-image" src="assets/images/g6.jpg" alt="Card image cap"/>
+                                    <img className="card-img-bottom d-block radius-image" src="assets/images/g6.jpg" alt="Card cap"/>
                                 </a>
                             </div>
                             <div className="card-body p-0 blog-details">
