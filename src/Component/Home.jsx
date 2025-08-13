@@ -1,5 +1,3 @@
- 
-import BannerCarousel from './BannerCarousel'
 import { useEffect } from "react";
 import Contact from './Contact.jsx';
 import WallpaperCostCalculator from './WallpaperCostCalculator';
@@ -102,7 +100,7 @@ function Home() {
                         <div className="banner-info header-hero-19 position-relative p-4">
                             {/* Transparent background overlay */}
                     <div className="bg-overlay"></div>
-                            <h5 class="text-uppercase">CRAFTING STUNNING WALL STORIES</h5>
+                            <h5 className="text-uppercase">CRAFTING STUNNING WALL STORIES</h5>
                             <h3 className="title-hero-19 text-info">Designer Wallpaper Solutions</h3>
                             <h5>Professional wallpaper for home wall in Hyderabad, bringing international designs and expert installation to transform your spaces.</h5>
                             <a href="about.html" className="btn btn-style btn-banner mt-sm-5 mt-4">Read More </a>
@@ -116,7 +114,7 @@ function Home() {
                 <div className="banner-info header-hero-19 p-4 position-relative">
                     {/* Transparent background overlay */}
                     <div className="bg-overlay"></div>
-                    <h5 class="text-uppercase">Transforming Walls, Transforming Spaces</h5>
+                    <h5 className="text-uppercase">Transforming Walls, Transforming Spaces</h5>
                     <h3 className="title-hero-19 text-info">Complete Wallpaper Solutions</h3>
                     <h5>
                     From concept to completion — Hyderabad’s trusted wallpaper experts delivering bespoke designs, premium materials, and flawless installation for homes and offices.
@@ -134,7 +132,7 @@ function Home() {
                         <div className="banner-info header-hero-19 p-4 position-relative">
                             {/* Transparent background overlay */}
                     <div className="bg-overlay"></div>
-                            <h5 class="text-uppercase">Elavate Every Wall With Style</h5>
+                            <h5 className="text-uppercase">Elavate Every Wall With Style</h5>
                             <h3 className="title-hero-19 text-info">Bespoke Wallpaper Creations</h3>
                             <h5>Hyderabad’s trusted wallpaper experts delivering tailored designs, superior quality, and flawless installation for homes and offices.</h5>
                             <a href="about.html" className="btn btn-style btn-banner mt-sm-5 mt-4">Read More </a>
@@ -487,7 +485,7 @@ function Home() {
                         <div className="card">
                             <div className="card-header p-0 position-relative border-0">
                                 <a href="blog-single.html">
-                                    <img className="card-img-bottom d-block radius-image" src="assets/images/g7.jpg" alt="Card image cap"/>
+                                    <img className="card-img-bottom d-block radius-image" src="assets/images/g7.jpg" alt="Decorative card illustration"/>
                                 </a>
                             </div>
                             <div className="card-body p-0 blog-details">

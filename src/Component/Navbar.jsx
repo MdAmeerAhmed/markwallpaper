@@ -115,29 +115,29 @@ const Navbar = () => {
                   <div className="popup">
                     <h3 className="title-w3l two mb-4">Get Quote</h3>
                     <form action="error.html" method="GET" className="search-box">
-                     <div class="mb-3">
-    <label class="form-label">Full Name</label>
-    <input type="text" class="form-control" placeholder="Enter your name" required/>
+                     <div className="mb-3">
+    <label className="form-label">Full Name</label>
+    <input type="text" className="form-control" placeholder="Enter your name" required/>
   </div>
   
-  <div class="mb-3">
-    <label class="form-label">Email Address</label>
-    <input type="email" class="form-control" placeholder="Enter your email" required/>
+  <div className="mb-3">
+    <label className="form-label">Email Address</label>
+    <input type="email" className="form-control" placeholder="Enter your email" required/>
   </div>
   
-  <div class="mb-3">
-    <label class="form-label">Phone Number</label>
-    <input type="tel" class="form-control" placeholder="Enter your phone number" required/>
+  <div className="mb-3">
+    <label className="form-label">Phone Number</label>
+    <input type="tel" className="form-control" placeholder="Enter your phone number" required/>
   </div>
   
-  <div class="mb-3">
-    <label class="form-label">Wallpaper Dimensions</label>
-    <input type="text" class="form-control" placeholder="e.g. 12ft x 10ft" required />
+  <div className="mb-3">
+    <label className="form-label">Wallpaper Dimensions</label>
+    <input type="text" className="form-control" placeholder="e.g. 12ft x 10ft" required />
   </div>
   
-  <div class="mb-3">
-    <label class="form-label">Design Preference</label>
-    <textarea class="form-control" placeholder="Describe the style or theme you want" rows="3"></textarea>
+  <div className="mb-3">
+    <label className="form-label">Design Preference</label>
+    <textarea className="form-control" placeholder="Describe the style or theme you want" rows="3"></textarea>
   </div>
                       <button type="submit" className="btn">Get Quotation</button>
                     </form>

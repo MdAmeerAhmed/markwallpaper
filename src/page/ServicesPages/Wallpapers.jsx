@@ -6,14 +6,14 @@ const Wallpaper = () => {
 
   return (
     <>
-      <div class="inner-banner py-5">
-        <section class="w3l-breadcrumb text-left py-sm-5">
-          <div class="container">
-            <div class="w3breadcrumb-right">
-              <ul class="breadcrumbs-custom-path">
+      <div className="inner-banner py-5">
+        <section className="w3l-breadcrumb text-left py-sm-5">
+          <div className="container">
+            <div className="w3breadcrumb-right">
+              <ul className="breadcrumbs-custom-path">
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><span class="fas fa-angle-double-right mx-2"></span> Services</li>
-                <li class="active"><span class="fas fa-angle-double-right mx-2"></span> Wallpaper</li>
+                <li className="active"><span className="fas fa-angle-double-right mx-2"></span> Services</li>
+                <li className="active"><span className="fas fa-angle-double-right mx-2"></span> Wallpaper</li>
               </ul>
             </div>
           </div>
