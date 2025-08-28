@@ -131,7 +131,7 @@ Our mission is to transform ordinary spaces into extraordinary experiences throu
     <section className="w3l-team py-5" id="team">
         <div className="container py-lg-5 py-md-4 py-2">
             <div className="row team-row">
-                <div className="col-lg-10 col-md-6  team-wrap-info pe-lg-5">
+                <div className="col-lg-10 col-md-6    team-wrap-info pe-lg-5">
                     <h6 className="title-subw3hny">Our Experts</h6>
                     <h3 className="title-w3l mb-md-4 mb-2">Meet the Team</h3>
                     <p className="text-para pe-lg-5">Behind every stunning wallpaper design is a team of passionate professionals. Our creative experts blend artistry, innovation, and precision to deliver designs that transform ordinary walls into extraordinary masterpieces. With years of experience and a keen eye for detail, they ensure every project reflects elegance, quality, and your unique style.

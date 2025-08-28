@@ -608,20 +608,18 @@ function Home() {
                             <div className="testimonial-content">
                                 <div className="testimonial">
                                     <div className="testimonial-gds-1">
-                                        <div className="test-img"><img src="assets/images/team1.jpg" className="img-fluid" alt="client-img"/>
+                                        <div className="test-img">
                                         </div>
                                         <div className="testi-des">
                                             <div className="peopl align-self">
-                                                <h3>John wilson</h3>
-                                                <p className="indentity">Example City</p>
+                                                <h3>Rohit Sharma</h3>
+                                                <p className="indentity">Hyderabad</p>
                                             </div>
                                         </div>
                                     </div>
 
 
-                                    <p className="quote-info"> <i className="fas fa-quote-left me-2"></i> Lorem ipsum dolor sit amet elit. Velit beatae
-                                        laudantium
-                                        voluptate rem ullam dolore.<i className="fas fa-quote-right ms-2"></i></p>
+                                    <p className="quote-info"> <i className="fas fa-quote-left me-2"></i> I was amazed by the wide variety of designs. The wallpaper I chose completely changed the look of my living room. Excellent quality and service!.<i className="fas fa-quote-right ms-2"></i></p>
 
 
 
@@ -632,19 +630,17 @@ function Home() {
                             <div className="testimonial-content">
                                 <div className="testimonial">
                                     <div className="testimonial-gds-1">
-                                        <div className="test-img"><img src="assets/images/team2.jpg" className="img-fluid" alt="client-img"/>
+                                        <div className="test-img"> 
                                         </div>
                                         <div className="testi-des">
                                             <div className="peopl align-self">
-                                                <h3>Shelly Johnson</h3>
-                                                <p className="indentity">Example City</p>
+                                                <h3>Sana Ali</h3>
+                                                <p className="indentity">Hyderabad</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <p className="quote-info"> <i className="fas fa-quote-left me-2"></i> Lorem ipsum dolor sit amet elit. Velit beatae
-                                        laudantium
-                                        voluptate rem ullam dolore.<i className="fas fa-quote-right ms-2"></i></p>
+                                    <p className="quote-info"> <i className="fas fa-quote-left me-2"></i>Beautiful collection! The wallpapers are elegant and easy to install. My office looks so much more professional now.<i className="fas fa-quote-right ms-2"></i></p>
                                 </div>
                             </div>
                         </div>
@@ -652,19 +648,17 @@ function Home() {
                             <div className="testimonial-content">
                                 <div className="testimonial">
                                     <div className="testimonial-gds-1">
-                                        <div className="test-img"><img src="assets/images/team3.jpg" className="img-fluid" alt="client-img"/>
+                                        <div className="test-img"> 
                                         </div>
                                         <div className="testi-des">
                                             <div className="peopl align-self">
-                                                <h3>Cathrine Wagner</h3>
-                                                <p className="indentity">Example City</p>
+                                                <h3>Ananya Gupta</h3>
+                                                <p className="indentity">Hyderabad</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <p className="quote-info"> <i className="fas fa-quote-left me-2"></i> Lorem ipsum dolor sit amet elit. Velit beatae
-                                        laudantium
-                                        voluptate rem ullam dolore.<i className="fas fa-quote-right ms-2"></i></p>
+                                    <p className="quote-info"> <i className="fas fa-quote-left me-2"></i> From modern to classic designs, they have it all. I loved the smooth finish and vibrant colors. Truly worth it!.<i className="fas fa-quote-right ms-2"></i></p>
 
                                 </div>
                             </div>
@@ -673,19 +667,17 @@ function Home() {
                             <div className="testimonial-content">
                                 <div className="testimonial">
                                     <div className="testimonial-gds-1">
-                                        <div className="test-img"><img src="assets/images/team4.jpg" className="img-fluid" alt="client-img"/>
+                                        <div className="test-img"> 
                                         </div>
                                         <div className="testi-des">
                                             <div className="peopl align-self">
                                                 <h3>Cuthbert Brain</h3>
-                                                <p className="indentity">Example City</p>
+                                                <p className="indentity">Hyderabad</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <p className="quote-info"> <i className="fas fa-quote-left me-2"></i> Lorem ipsum dolor sit amet elit. Velit beatae
-                                        laudantium
-                                        voluptate rem ullam dolore.<i className="fas fa-quote-right ms-2"></i></p>
+                                    <p className="quote-info"> <i className="fas fa-quote-left me-2"></i> Great experience! The team helped me pick the right wallpaper for my bedroom, and it feels so cozy now. Highly recommended.<i className="fas fa-quote-right ms-2"></i></p>
                                 </div>
                             </div>
                         </div>
@@ -693,19 +685,17 @@ function Home() {
                             <div className="testimonial-content">
                                 <div className="testimonial">
                                     <div className="testimonial-gds-1">
-                                        <div className="test-img"><img src="assets/images/team2.jpg" className="img-fluid" alt="client-img"/>
+                                        <div className="test-img"> 
                                         </div>
                                         <div className="testi-des">
                                             <div className="peopl align-self">
-                                                <h3>Russel Reed</h3>
-                                                <p className="indentity">Example City</p>
+                                                <h3>Vikram Patel</h3>
+                                                <p className="indentity">Hyderabad</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <p className="quote-info"> <i className="fas fa-quote-left me-2"></i> Lorem ipsum dolor sit amet elit. Velit beatae
-                                        laudantium
-                                        voluptate rem ullam dolore.<i className="fas fa-quote-right ms-2"></i></p>
+                                    <p className="quote-info"> <i className="fas fa-quote-left me-2"></i> Premium quality wallpapers at an affordable price. The designs are unique and my guests keep complimenting them.<i className="fas fa-quote-right ms-2"></i></p>
                                 </div>
                             </div>
                         </div>
@@ -713,20 +703,18 @@ function Home() {
                             <div className="testimonial-content">
                                 <div className="testimonial">
                                     <div className="testimonial-gds-1">
-                                        <div className="test-img"><img src="assets/images/team1.jpg" className="img-fluid" alt="client-img"/>
+                                        <div className="test-img"> 
                                         </div>
                                         <div className="testi-des">
                                             <div className="peopl align-self">
                                                 <h3>Scott Brain</h3>
-                                                <p className="indentity">Example City</p>
+                                                <p className="indentity">Hyderabad</p>
                                             </div>
                                         </div>
                                     </div>
                                     <blockquote>
                                         <i className="fas fa-quote-right"></i>
-                                        <q>Lorem ipsum dolor sit amet elit. Velit beatae
-                                            laudantium
-                                            voluptate rem ullam dolore.</q>
+                                        <q>Superb designs, vibrant colors, and very durable quality. Installation was hassle-free too!</q>
                                     </blockquote>
 
                                 </div>
@@ -736,20 +724,18 @@ function Home() {
                             <div className="testimonial-content">
                                 <div className="testimonial">
                                     <div className="testimonial-gds-1">
-                                        <div className="test-img"><img src="assets/images/team3.jpg" className="img-fluid" alt="client-img"/>
+                                        <div className="test-img"> 
                                         </div>
                                         <div className="testi-des">
                                             <div className="peopl align-self">
-                                                <h3>Jane Smith</h3>
-                                                <p className="indentity">Example City</p>
+                                                <h3>Aijaz Khan</h3>
+                                                <p className="indentity">Hyderabad</p>
                                             </div>
                                         </div>
                                     </div>
                                     <blockquote>
                                         <i className="fas fa-quote-right"></i>
-                                        <q>Lorem ipsum dolor sit amet elit. Velit beatae
-                                            laudantium
-                                            voluptate rem ullam dolore.</q>
+                                        <q>I ordered customized wallpaper, and the result was beyond my expectations. Fits perfectly with my interior.</q>
                                     </blockquote>
 
                                 </div>

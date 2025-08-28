@@ -87,6 +87,16 @@ function Services() {
                     </div>
                 </div>
                 <div className="col-lg-4 col-md-6 grids-feature mt-5">
+                    <img src="assets/images/eimg-40.jpg" alt="" className="img-fluid radius-image"/>
+                    <div className="area-box mt-4">
+                        <i className="fas fa-drafting-compass" aria-hidden="true"></i>
+                        <div className="area-box-info">
+                            <h4><a href="/window" className="title-head">Aluminum Windows & Kitchen Cabinets</a></h4>
+                           <p>Elegant aluminum windows and stylish kitchen cabinets designed to enhance beauty and functionality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-4 col-md-6 grids-feature mt-5">
                     <img src="assets/images/woman.jpg" alt="" className="img-fluid radius-image"/>
                     <div className="area-box mt-4">
                         <i className="fas fa-drafting-compass" aria-hidden="true"></i>

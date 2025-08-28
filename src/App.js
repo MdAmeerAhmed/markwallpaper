@@ -17,6 +17,7 @@ import CustomWallpaper from "./page/ServicesPages/CustomWallpaper";
 import Wardrobe from "./page/ServicesPages/Wardrobe";
 import ModularKitchen from "./page/ServicesPages/ModularKitchen";
 import WallpaperProject from "./page/ProjectPages/WallpaperProject";
+import Window from "./page/ServicesPages/Window";
 function App() {
     
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="customized-wallpapers" element={<CustomWallpaper />} />
           <Route path="wardrobe" element={<Wardrobe />} />
           <Route path="modular-kitchens" element={<ModularKitchen />} />
+          <Route path="window" element={<Window />} />
           <Route path="blinds" element={<Blinds />} />
           <Route path="project" element={<Project />} />
           <Route path="gallery" element={<Gallery />} />

@@ -2,7 +2,7 @@ import React  from 'react';
 import './Wallpapers.css'; // We'll create this CSS file next
 import { NavLink } from 'react-router-dom';
 import Contact from '../../Component/Contact';
-const ModularKitchen = () => {
+const Window = () => {
 
   return (
     <>
@@ -13,7 +13,7 @@ const ModularKitchen = () => {
               <ul className="breadcrumbs-custom-path">
                 <li><a href="index.html">Home</a></li>
                 <li className="active"><span className="fas fa-angle-double-right mx-2"></span> Services</li>
-                <li className="active"><span className="fas fa-angle-double-right mx-2"></span> Modular Kitchens</li>
+                <li className="active"><span className="fas fa-angle-double-right mx-2"></span>Aluminum Windows & Kitchen Cabinets</li>
               </ul>
             </div>
           </div>
@@ -29,25 +29,25 @@ const ModularKitchen = () => {
                 <h4>PRODUCTS</h4>
                 <hr />
                 <ul className="blog-cat">
-                  <li  >
+                  <li >
                     <NavLink to="/wallpapers">WALLPAPERS</NavLink>
                   </li>
-                  <li>
-                      <NavLink to="/kidsroom">KIDSROOM</NavLink>
-                       </li>
+                  <li >
+                                      <NavLink to="/kidsroom">KIDSROOM</NavLink>
+                                    </li>
                                     <li>
                                       <NavLink to="/Blinds">BLINDS</NavLink>
                                     </li>
                                     <li>
                                        <NavLink to="/customized-wallpapers">CUSTOMIZED WALLPAPERS</NavLink>
                                      </li>
-                                    <li className="active">
+                                    <li>
                                       <NavLink to="/modular-kitchens">MODULAR KITCHENS</NavLink>
                                     </li>
                                     <li>
                                       <NavLink to="/wardrobe">WARDROBE</NavLink>
                                     </li>
-                                    <li>
+                                    <li className="active">
                                                       <NavLink to="/windows">Aluminum Windows & Kitchen Cabinets</NavLink>
                                                       </li>  
                 </ul>
@@ -59,7 +59,7 @@ const ModularKitchen = () => {
               <div className="inner-box ">
                 <div className="image-box" style={{ padding: "25px" }}>
   <img 
-    src="assets/images/k1.jpg" 
+    src="assets/images/glass.jpg" 
     alt="Wallpaper" 
     style={{ 
       width: "100%", 
@@ -70,35 +70,38 @@ const ModularKitchen = () => {
     }} 
   />
 </div>
-                <h2>Mark Wallpaper – Premium Modular Kitchen Dealer & Supplier</h2>
+
+                <h2>Aluminum Windows & Kitchen Cabinets Dealer & Supplier</h2>
                 <div className="text" >
                   <p className="text-justify pt-3" >
-                   Mark Wallpaper is one of the most trusted names in Hyderabad and Secunderabad for delivering elegant, functional, and customized modular kitchens. We specialize in designing and installing modern kitchen solutions that combine style, comfort, and durability.
-                  </p>
+                    Aluminum windows and kitchen cabinets play a vital role in enhancing both the beauty and functionality of your home. At Mark Interiors, we specialize in high-quality aluminum windows and modern kitchen cabinets in Secunderabad, Hyderabad, and surrounding areas. We provide durable, stylish, and customized solutions that blend strength with elegance. </p>
                   <p className="text-justify mt-4">
-                    We offer a huge variety of modular kitchen designs with different layouts, colors, and finishes to suit every home. From compact spaces to luxury kitchens, our solutions are tailored to meet your needs while ensuring maximum storage and functionality. Our expert team also guides clients in selecting the right combinations of cabinets, countertops, and finishes that perfectly match their interiors.
-                  </p>
-                  <strong>Wide Range of Modular Kitchens!</strong>
+                  We offer a wide range of aluminum windows and kitchen cabinets with sleek designs, smooth finishes, and multiple color options to match your interiors. Whether you need modern kitchen storage solutions or durable windows with a premium look, we help you find the perfect fit for your home. Our team also guides you in choosing the right styles and combinations to complement your interiors.</p>
+                  <strong>Huge Range for Your Home!</strong>
                   <p className="text-justify mt-4">
-                    At Mark Wallpaper, we design and deliver premium modular kitchens in Hyderabad & Secunderabad. Our modern, functional, and stylish solutions bring comfort, durability, and elegance to your home.
-                  </p>
+                   We have a wide variety of aluminum windows and kitchen cabinet designs available in different sizes, textures, and finishes, giving clients the flexibility to choose as per their preferences and space. We also provide expert advice on the best combinations to elevate the beauty and utility of your home.  </p>
                   <strong>Highly Experienced Team!</strong>
                   <p className="text-justify my-4">
-                    At Mark Wallpaper, we take pride in having a highly experienced team of professionals who specialize in creating durable and stylish modular kitchens. Every material used is carefully tested for quality, ensuring your kitchen not only looks great but also lasts for years.
-                  </p>
+                  What makes us the best aluminum window and kitchen cabinet supplier in Secunderabad, Hyderabad is our team of skilled professionals with years of expertise. We focus on delivering premium, long-lasting, and low-maintenance solutions. Each product is tested for durability and quality, ensuring strength, elegance, and functionality for every home.  </p>
                   <div className="two-column row">
                     <div className="column col-lg-6 col-md-6 col-sm-12">
                       <h4>These are features on which we work on:</h4>
                       <ul className="mt-4" >
+                        <li><i className="fas fa-check-double me-2 text-primary"></i>Durable & Long-Lasting</li>
+                         <li><i className="fas fa-check-double me-2 text-primary"></i>Scratch & Stain Resistant</li>
                         <li><i className="fas fa-check-double me-2 text-primary"></i>Fine polishing</li>
                         <li><i className="fas fa-check-double me-2 text-primary"></i>Stylish and colorful</li>
                         <li><i className="fas fa-check-double me-2 text-primary"></i>Looks hygienic clean</li>
                         <li><i className="fas fa-check-double me-2 text-primary"></i>Fully ventilated</li>
+                        <li><i className="fas fa-check-double me-2 text-primary"></i>Modern & Trendy Style</li>
+                        <li><i className="fas fa-check-double me-2 text-primary"></i>Eco-Friendly Options</li>
+                        <li><i className="fas fa-check-double me-2 text-primary"></i>Child-Friendly & Safe</li>
+                        <li><i className="fas fa-check-double me-2 text-primary"></i>Affordable & Value for Money</li>
                       </ul>
                     </div>
                     <div className="column col-lg-6 col-md-6 col-sm-12">
                       <div className="image">
-                        <img src="assets/images/kict.jpg" alt="Wallpaper" />
+                        <img src="assets/images/glaas.jpg" alt="Wallpaper" />
                       </div>
                     </div>
                   </div>
@@ -115,44 +118,52 @@ const ModularKitchen = () => {
        <section className="testimonial-section-two">
         <div className="auto-container">
           <div className="sec-title">
-            <h2>Modular Kitchen</h2>
+            <h2>Aluminum Windows & Kitchen Cabinets</h2>
           </div>
         </div>
         <div className="auto-container">
           <div className="row">
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-3">
               <div className="srvce">
-                <img src="assets/images/k6.jpg" alt="2D Wallpaper" />
-                <h4><a href="/">Acrylic Kitchen</a></h4>
+                <img src="assets/images/gla-1.jpg" alt="2D Wallpaper" />
+                
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-3">
               <div className="srvce">
-                <img src="assets/images/k5.jpg" alt="2D Wallpaper" />
-                <h4><a href="/">Morden Kitchen</a></h4>
+                <img src="assets/images/gla-2.jpg" alt="3D Wallpaper" />
+                
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
-              <div className="srvce">
-                <img src="assets/images/k3.jpg" alt="3D Wallpaper" />
-                <h4><a href="/">Laminate Kitchen</a></h4>
+            <div className="col-md-6 col-lg-3">
+              <div className="srvce sr-n-min-hgt-530">
+                <img src="assets/images/gla-3.jpg" alt="5D Wallpaper" />
               </div>
             </div>
-             
+            <div className="col-md-6 col-lg-3">
+              <div className="srvce sr-n-min-hgt-530">
+                <img src="assets/images/eimg-31.jpeg" alt="Customized Wallpaper" />
+                
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <div className="wallppr-img ">
         <div className="container">
           <div className="row">
-            {Array.from({ length: 13 }, (_, index) => (
-              <div key={index} className="col-md-4 col-lg-4">
-                <div className="wal-img">
-                  <img src={`assets/images/kic-${index + 1}.jpg`} alt={`Wallpaper ${index + 1}`} />
-                </div>
-              </div>
-            ))}
-          </div>
+  {Array.from({ length: 10 }, (_, index) => (
+    <div key={index} className="col-md-4 col-lg-4">
+      <div className="wal-img">
+        <img
+          src={`assets/images/eimg-${30 + index}.jpeg`}
+          alt={`Wallpaper ${31 + index + 1}`}
+        />
+      </div>
+    </div>
+  ))}
+</div>
+
         </div>
       </div>
       <Contact />
@@ -160,4 +171,4 @@ const ModularKitchen = () => {
   );
 };
 
-export default ModularKitchen;
+export default Window;

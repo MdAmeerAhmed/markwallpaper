@@ -50,7 +50,9 @@ const Blinds = () => {
                   <li>
                   <NavLink to="/wardrobe">WARDROBE</NavLink>
                   </li>                            
-                  
+                  <li>
+                  <NavLink to="/windows">Aluminum Windows & Kitchen Cabinets</NavLink>
+                  </li>  
                 </ul>
               </div>
             </aside>
