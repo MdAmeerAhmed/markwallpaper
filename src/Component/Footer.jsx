@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 function Footer() {
     const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -34,8 +35,8 @@ function Footer() {
             <div className="container py-lg-4">
                 <div className="row footer-top-29">
                     <div className="col-lg-4 footer-list-29 footer-1 pe-lg-5">
-                        <h2><a className="navbar-brand" href="index.html">
-                                <span className="w3yellow">Mark</span>Wallpaper</a></h2>
+                        <h2><Link className="navbar-brand" to="/">
+                                <span className="w3yellow">Mark</span>Wallpaper</Link></h2>
                         <p className="parahny pr-lg-5 mr-xl-4 mb-4">MarkWallpaper is your trusted partner for wallpapers, wardrobes, blinds, and modular kitchens. We design interiors that are stylish, functional, and built to reflect your personality.
                         </p>
 
@@ -44,17 +45,17 @@ function Footer() {
                         <h6 className="footer-title-29">Quick Links</h6>
                         <div className="footer-listw3-grids">
                             <ul className="footer-listw3">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/about-us">About</a></li>
-                                <li><a href="/services">Services</a></li>
-                                <li><a href="/contact">Contact</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="about-us" target="_blank" rel="noopener noreferrer">About</Link></li>
+                                <li><Link to="/services" target="_blank" rel="noopener noreferrer">Services</Link></li>
+                                <li><Link to="/contact" target="_blank" rel="noopener noreferrer">Contact</Link></li>
 
                             </ul>
                             <ul className="footer-listw3">
-                                <li><a href="/wallpapaer">Wallpapaer</a></li>
-                                <li><a href="/blind">Blind</a></li>
-                                <li><a href="/modular-kitchens">Modular Kitchen</a></li>
-                                <li><a href="/faq">FAQ</a></li>
+                                <li><Link to="/Wallpapers" target="_blank" rel="noopener noreferrer">Wallpapaer</Link></li>
+                                <li><Link to="/blind" target="_blank" rel="noopener noreferrer">Blind</Link></li>
+                                <li><Link to="/modular-kitchens" target="_blank" rel="noopener noreferrer">Modular Kitchen</Link></li>
+                                <li><Link to="/faq" target="_blank" rel="noopener noreferrer">FAQ</Link></li>
                                 
                             </ul>
                         </div>
@@ -70,17 +71,17 @@ function Footer() {
                         </form>
                         {message && <p className="subscribe-message">{message}</p>}
                         <div className="main-social-footer-29 mt-4">
-                            <a href="#facebook" className="facebook"><span className="fab fa-facebook-f"></span></a>
-                            <a href="#twitter" className="twitter"><span className="fab fa-twitter"></span></a>
-                            <a href="#pinterest"><span className="fab fa-pinterest-p"></span></a>
-                            <a href="#instagram" className="instagram"><span className="fab fa-instagram"></span></a>
-                            <a href="#google" className="google"><span className="fab fa-google-plus-g"></span></a>
-                            <a href="#linkd" className="linkd"><span className="fab fa-linkedin-in"></span></a>
+                            <Link to="/" className="facebook" target="_blank" rel="noopener noreferrer"><span className="fab fa-facebook-f"></span></Link>
+                            <Link to="/" className="twitter" target="_blank" rel="noopener noreferrer"><span className="fab fa-twitter"></span></Link>
+                            <Link to="/"><span className="fab fa-pinterest-p"></span></Link>
+                            <Link to="/" className="instagram" target="_blank" rel="noopener noreferrer"><span className="fab fa-instagram"></span></Link>
+                            <Link to="/" className="google" target="_blank" rel="noopener noreferrer"><span className="fab fa-google-plus-g"></span></Link>
+                            <Link to="/" className="linkd" target="_blank" rel="noopener noreferrer"><span className="fab fa-linkedin-in"></span></Link>
                         </div>
                     </div>
                 </div>
                 <div className="bottom-copies text-center">
-                    <p className="copy-footer-29">© 2025 MarkWallpaperDesigner. All rights reserved .</p>
+                    <p className="copy-footer-29">© 2025 MarkWallpaper. All rights reserved .</p>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@ function WallpaperProject() {
             <div class="container">
                 <div class="w3breadcrumb-right">
                     <ul class="breadcrumbs-custom-path">
-                        <li><a href="/">Home</a></li>
+                        <li><NavLink to="/">Home</NavLink></li>
                         <li class="active"><span class="fas fa-angle-double-right mx-2"></span> Blog Single</li>
                     </ul>
                 </div>
@@ -24,7 +24,7 @@ function WallpaperProject() {
                         <img src="assets/images/banner5.jpg" class="img-fluid" alt="" />
                         <h4 class="">Fusce faucibus ante vitae justo efficitur</h4>
                         <h6>Juky 22nd, 2021</h6>
-                        <a class="admin">- by Steven Rich </a>
+                        <a href="/wallpaper-project" class="admin">- by Steven Rich </a>
                         <p class="mt-4 mb-3">Fusce faucibus ante vitae justo efficitur elementum. Donec et ipsum faucibus
                             arcu
                             ipsum elementum, luctus justo. ac purus semper. Fusce faucibus ante vitae justo efficitur sed et
@@ -54,9 +54,9 @@ function WallpaperProject() {
                                 <div class="col-lg-6">
                                     <div class="list-view list-view1">
                                         <div class="grids5-info">
-                                            <a   class="d-block zoom"><img src="assets/images/g3.jpg" alt="" class="img-fluid radius-image news-image"/></a>
+                                            <a  href="/wallpaper-project" class="d-block zoom"><img src="assets/images/g3.jpg" alt="" class="img-fluid radius-image news-image"/></a>
                                             <div class="blog-info align-self">
-                                                <a   class="blog-desc1">
+                                                <a  href="/wallpaper-project"  class="blog-desc1">
                                                     Donec ipsum faucibus
                                                     arcu elementum
                                                 </a>
@@ -71,12 +71,12 @@ function WallpaperProject() {
                                 <div class="col-lg-6 mt-lg-0 mt-5">
                                     <div class="list-view list-view1">
                                         <div class="grids5-info">
-                                            <a   class="d-block zoom"><img src="assets/images/g4.jpg" alt="" class="img-fluid radius-image news-image"/></a>
+                                            <a  href="/wallpaper-project" class="d-block zoom"><img src="assets/images/g4.jpg" alt="" class="img-fluid radius-image news-image"/></a>
                                             <div class="blog-info align-self">
-                                                <a class="blog-desc1">Donec ipsum faucibus
+                                                <a href="/wallpaper-project" class="blog-desc1">Donec ipsum faucibus
                                                     arcu elementum</a>
                                                 <div class="author align-items-center mt-2 mb-1">
-                                                    <a  >Steven Rich </a> in <a> Interior</a>
+                                                    <a  href="/wallpaper-project" >Steven Rich </a> in <a> Interior</a>
                                                 </div>
 
                                             </div>
@@ -95,13 +95,13 @@ function WallpaperProject() {
                         <div class="author-cardview my-5 pt-lg-3">
                             <div class="row author-card author-listhny align-items-center">
                                 <div class="author-left col-md-3 mb-md-0 mb-4 pl-lg-0">
-                                    <a  >
+                                    <a href="/wallpaper-project" >
                                         <img class="img-fluid img-curve" src="assets/images/team1.jpg" alt=" "/>
                                     </a>
                                 </div>
                                 <div class="author-right col-md-9 position-relative">
 
-                                    <h4 class="mt-0 mb-1"><a   class="title-team-28">Amanda Brown</a></h4>
+                                    <h4 class="mt-0 mb-1"><a href="/wallpaper-project"  class="title-team-28">Amanda Brown</a></h4>
                                     <p class="para-team mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sapiente distinctio soluta excepturi?
                                         Obcaecati, corporis velit.</p>
 
@@ -165,21 +165,21 @@ function WallpaperProject() {
 
                                 <article class="post">
                                     <figure class="post-thumb"><img src="assets/images/ab1.jpg" class="radius-image" alt=""/></figure>
-                                    <div class="text"><a  >Lorem ipsum, dolor sit amet consectetur.</a>
+                                    <div class="text"><a href="/wallpaper-project"  >Lorem ipsum, dolor sit amet consectetur.</a>
                                     </div>
                                     <div class="post-info">July 02, 2021</div>
                                 </article>
 
                                 <article class="post">
                                     <figure class="post-thumb"><img src="assets/images/ab2.jpg" class="radius-image" alt=""/></figure>
-                                    <div class="text"><a>Lorem ipsum, dolor sit amet consectetur
+                                    <div class="text"><a href="/wallpaper-project">Lorem ipsum, dolor sit amet consectetur
                                         </a></div>
                                     <div class="post-info">July 02, 2021</div>
                                 </article>
 
                                 <article class="post mb-5">
                                     <figure class="post-thumb"><img src="assets/images/ab3.jpg" class="radius-image" alt=""/></figure>
-                                    <div class="text"><a >Lorem ipsum, dolor sit amet consectetur.</a>
+                                    <div class="text"><a href="/wallpaper-project">Lorem ipsum, dolor sit amet consectetur.</a>
                                     </div>
                                     <div class="post-info">July 02, 2021</div>
                                 </article>
