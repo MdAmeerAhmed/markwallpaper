@@ -1,6 +1,6 @@
 import React from 'react'
 import Contact from '../../Component/Contact'
-
+import { NavLink } from 'react-router-dom';
 function WallpaperProject() {
   return (
     <>
@@ -9,7 +9,7 @@ function WallpaperProject() {
             <div class="container">
                 <div class="w3breadcrumb-right">
                     <ul class="breadcrumbs-custom-path">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="active"><span class="fas fa-angle-double-right mx-2"></span> Blog Single</li>
                     </ul>
                 </div>
@@ -24,7 +24,7 @@ function WallpaperProject() {
                         <img src="assets/images/banner5.jpg" class="img-fluid" alt="" />
                         <h4 class="">Fusce faucibus ante vitae justo efficitur</h4>
                         <h6>Juky 22nd, 2021</h6>
-                        <a href="#admin" class="admin">- by Steven Rich </a>
+                        <a class="admin">- by Steven Rich </a>
                         <p class="mt-4 mb-3">Fusce faucibus ante vitae justo efficitur elementum. Donec et ipsum faucibus
                             arcu
                             ipsum elementum, luctus justo. ac purus semper. Fusce faucibus ante vitae justo efficitur sed et
@@ -54,14 +54,14 @@ function WallpaperProject() {
                                 <div class="col-lg-6">
                                     <div class="list-view list-view1">
                                         <div class="grids5-info">
-                                            <a href="blog-single.html" class="d-block zoom"><img src="assets/images/g3.jpg" alt="" class="img-fluid radius-image news-image"/></a>
+                                            <a   class="d-block zoom"><img src="assets/images/g3.jpg" alt="" class="img-fluid radius-image news-image"/></a>
                                             <div class="blog-info align-self">
-                                                <a href="blog-single.html" class="blog-desc1">
+                                                <a   class="blog-desc1">
                                                     Donec ipsum faucibus
                                                     arcu elementum
                                                 </a>
                                                 <div class="author align-items-center mt-2 mb-1">
-                                                    <a href="#">Steven Rich </a> in <a href="#url"> Constraction</a>
+                                                    <a>Steven Rich </a> in <a> Constraction</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -71,12 +71,12 @@ function WallpaperProject() {
                                 <div class="col-lg-6 mt-lg-0 mt-5">
                                     <div class="list-view list-view1">
                                         <div class="grids5-info">
-                                            <a href="blog-single.html" class="d-block zoom"><img src="assets/images/g4.jpg" alt="" class="img-fluid radius-image news-image"/></a>
+                                            <a   class="d-block zoom"><img src="assets/images/g4.jpg" alt="" class="img-fluid radius-image news-image"/></a>
                                             <div class="blog-info align-self">
-                                                <a href="blog-single.html" class="blog-desc1">Donec ipsum faucibus
+                                                <a class="blog-desc1">Donec ipsum faucibus
                                                     arcu elementum</a>
                                                 <div class="author align-items-center mt-2 mb-1">
-                                                    <a href="#">Steven Rich </a> in <a href="#url"> Interior</a>
+                                                    <a  >Steven Rich </a> in <a> Interior</a>
                                                 </div>
 
                                             </div>
@@ -95,24 +95,24 @@ function WallpaperProject() {
                         <div class="author-cardview my-5 pt-lg-3">
                             <div class="row author-card author-listhny align-items-center">
                                 <div class="author-left col-md-3 mb-md-0 mb-4 pl-lg-0">
-                                    <a href="#url">
+                                    <a  >
                                         <img class="img-fluid img-curve" src="assets/images/team1.jpg" alt=" "/>
                                     </a>
                                 </div>
                                 <div class="author-right col-md-9 position-relative">
 
-                                    <h4 class="mt-0 mb-1"><a href="#url" class="title-team-28">Amanda Brown</a></h4>
+                                    <h4 class="mt-0 mb-1"><a   class="title-team-28">Amanda Brown</a></h4>
                                     <p class="para-team mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sapiente distinctio soluta excepturi?
                                         Obcaecati, corporis velit.</p>
 
                                     <div class="social mt-4">
-                                        <ul class="m-0 p-0">
-                                            <li><a href="#facebook" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
-                                            <li><a href="#twitter" class="twitter"><span class="fab fa-twitter"></span></a></li>
+                                         {/* <ul class="m-0 p-0">
+                                            <li><a href="/" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
+                                            <li><a href="/" class="twitter"><span class="fab fa-twitter"></span></a></li>
                                             <li><a href="#instagram" class="instagram"><span class="fab fa-instagram"></span></a></li>
                                             <li><a href="#pinterest"><span class="fab fa-pinterest-p"></span></a></li>
                                             <li><a href="#linkd" class="linkd"><span class="fab fa-linkedin-in"></span></a></li>
-                                        </ul>
+                                        </ul>   */}
                                     </div>
 
                                 </div>
@@ -129,17 +129,32 @@ function WallpaperProject() {
                                 <div class="sidebar-title">
                                     <h4>Other Projects</h4>
                                 </div>
-                                <ul class="blog-cat">
-
-
-                                    <li><a href="#link"><span class="fa fa-angle-double-right"></span> Appartment
-                                            <label>4</label></a></li>
-                                    <li><a href="#link"><span class="fa fa-angle-double-right"></span> Decor <label>8</label></a></li>
-                                    <li><a href="#link"><span class="fa fa-angle-double-right"></span> Furniture
-                                            <label>8</label></a></li>
-                                    <li><a href="#link"><span class="fa fa-angle-double-right"></span> Home <label>3</label></a></li>
-
-                                </ul>
+                                <ul className="blog-cat">
+    <li>
+        <NavLink to="/apartment">
+            <span className="fa fa-angle-double-right"></span>
+            Appartment <label>4</label>
+        </NavLink>
+    </li>
+    <li>
+        <NavLink to="/decor">
+            <span className="fa fa-angle-double-right"></span>
+            Decor <label>8</label>
+        </NavLink>
+    </li>
+    <li>
+        <NavLink to="/furniture">
+            <span className="fa fa-angle-double-right"></span>
+            Furniture <label>8</label>
+        </NavLink>
+    </li>
+    <li>
+        <NavLink to="/home">
+            <span className="fa fa-angle-double-right"></span>
+            Home <label>3</label>
+        </NavLink>
+    </li>
+</ul>
                             </div>
 
                             {/* <!-- Popular Post Widget--> */}
@@ -150,21 +165,21 @@ function WallpaperProject() {
 
                                 <article class="post">
                                     <figure class="post-thumb"><img src="assets/images/ab1.jpg" class="radius-image" alt=""/></figure>
-                                    <div class="text"><a href="blog-single.html">Lorem ipsum, dolor sit amet consectetur.</a>
+                                    <div class="text"><a  >Lorem ipsum, dolor sit amet consectetur.</a>
                                     </div>
                                     <div class="post-info">July 02, 2021</div>
                                 </article>
 
                                 <article class="post">
                                     <figure class="post-thumb"><img src="assets/images/ab2.jpg" class="radius-image" alt=""/></figure>
-                                    <div class="text"><a href="blog-single.html">Lorem ipsum, dolor sit amet consectetur
+                                    <div class="text"><a>Lorem ipsum, dolor sit amet consectetur
                                         </a></div>
                                     <div class="post-info">July 02, 2021</div>
                                 </article>
 
                                 <article class="post mb-5">
                                     <figure class="post-thumb"><img src="assets/images/ab3.jpg" class="radius-image" alt=""/></figure>
-                                    <div class="text"><a href="blog-single.html">Lorem ipsum, dolor sit amet consectetur.</a>
+                                    <div class="text"><a >Lorem ipsum, dolor sit amet consectetur.</a>
                                     </div>
                                     <div class="post-info">July 02, 2021</div>
                                 </article>
@@ -181,13 +196,13 @@ function WallpaperProject() {
                                         <div class="sidebar-title">
                                             <h4>Our Tags</h4>
                                         </div>
-                                        <a href="#url">Concrete</a>
-                                        <a href="#url">Interior</a>
-                                        <a href="#url">Office</a>
-                                        <a href="#url">Rent</a>
-                                        <a href="#url">Art</a>
-                                        <a href="#url">Furnished</a>
-                                        <a href="#url">Renovated</a>
+                                        <NavLink to="/concrete">Concrete</NavLink>
+<NavLink to="/interior">Interior</NavLink>
+<NavLink to="/office">Office</NavLink>
+<NavLink to="/rent">Rent</NavLink>
+<NavLink to="/art">Art</NavLink>
+<NavLink to="/furnished">Furnished</NavLink>
+<NavLink to="/renovated">Renovated</NavLink>
 
                                     </div>
 

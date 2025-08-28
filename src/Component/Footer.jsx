@@ -53,7 +53,7 @@ function Footer() {
                             <ul className="footer-listw3">
                                 <li><a href="/wallpapaer">Wallpapaer</a></li>
                                 <li><a href="/blind">Blind</a></li>
-                                <li><a href="">Modular Kitchen</a></li>
+                                <li><a href="/modular-kitchens">Modular Kitchen</a></li>
                                 <li><a href="/faq">FAQ</a></li>
                                 
                             </ul>
