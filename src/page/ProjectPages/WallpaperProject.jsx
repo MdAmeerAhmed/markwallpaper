@@ -56,7 +56,7 @@ function WallpaperProject() {
                                         <div class="grids5-info">
                                             <a  href="/wallpaper-project" class="d-block zoom"><img src="assets/images/g3.jpg" alt="" class="img-fluid radius-image news-image"/></a>
                                             <div class="blog-info align-self">
-                                                <a  href="/wallpaper-project"  class="blog-desc1">
+                                                <a href="/wallpaper-project"  class="blog-desc1">
                                                     Donec ipsum faucibus
                                                     arcu elementum
                                                 </a>
