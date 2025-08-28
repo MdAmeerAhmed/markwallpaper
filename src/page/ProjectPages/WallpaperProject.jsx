@@ -76,7 +76,7 @@ function WallpaperProject() {
                                                 <a href="/wallpaper-project" class="blog-desc1">Donec ipsum faucibus
                                                     arcu elementum</a>
                                                 <div class="author align-items-center mt-2 mb-1">
-                                                    <a  href="/wallpaper-project" >Steven Rich </a> in <a> Interior</a>
+                                                    <a  href="/wallpaper-project" >Steven Rich </a> in <a href="/wallpaper-project"> Interior</a>
                                                 </div>
 
                                             </div>
