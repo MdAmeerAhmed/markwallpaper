@@ -61,7 +61,7 @@ function WallpaperProject() {
                                                     arcu elementum
                                                 </a>
                                                 <div class="author align-items-center mt-2 mb-1">
-                                                    <a>Steven Rich </a> in <a> Constraction</a>
+                                                    <a href="/wallpaper-project">Steven Rich </a> in <a href="/wallpaper-project"> Constraction</a>
                                                 </div>
                                             </div>
                                         </div>
