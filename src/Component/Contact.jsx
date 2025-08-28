@@ -1,9 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 function Contact() {
+    const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+    const [message, setMessage] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setMessage('Sending...');
+
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        access_key: '684122e0-c7c5-46f7-b86c-c2ca69e86072', // Replace with your key
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      }),
+    });
+
+    const result = await response.json();
+    if (result.success) {
+      setMessage('Message sent successfully!');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } else {
+      setMessage('Something went wrong. Please try again.');
+    }
+  };
   return (
     <div>
-      <section className="w3l-contact-1 " id="contact">
+      <section className="w3l-contact-1 "  id="contact">
         <div className="contacts-9  py-md-4">
             <div className="container">
                 <div className="col-lg-12 cont-details mb-lg-0 mb-5 pe-lg-5">
@@ -22,7 +64,7 @@ function Contact() {
                                     </div>
                                     <div className="cont-right cont-right">
                                         <h6>Phone number</h6>
-                                        <p><a href="tel:+(21) 255 999 8887">+(21) 255 999 8887</a></p>
+                                        <p><a href="+(91) 707 540 7473">+(91) 707 540 7473</a></p>
                                     </div>
                                 </div>
                                 <div className="cont-top  col-lg-4 me-5 ">
@@ -31,16 +73,16 @@ function Contact() {
                                     </div>
                                     <div className="cont-right w-100">
                                         <h6>Send Email</h6>
-                                        <p><a href="mailto:Intrados@mail.com" className="mail">Intrados@mail.com</a></p>
+                                        <p><a href="mailto:markwallpaperdesigner.com" className="mail">markwallpaperdesigner@mail.com</a></p>
                                     </div>
                                 </div>
-                                <div className="cont-top  col-lg-4  w-100">
+                                <div className="cont-top  col-lg-4  w-75 ms-2" >
                                     <div className="cont-left text-center">
                                         <span className="fas fa-map-marked-alt"></span>
                                     </div>
                                     <div className="cont-right  ">
                                         <h6>Company Address</h6>
-                                        <p className="pr-lg-5">230 Trainer Honey street, Illinois.</p>
+                                        <p className="pr-lg-5">Shop No.1,Tower-2,Happy Homes,<br/>Pillar No.185,Upperpally,Hyderabad-500048</p>
                                     </div>
                                 </div>
                                 </div>
@@ -64,20 +106,31 @@ function Contact() {
                 {/* <!--//contact-block--> */}
                     <div className="col-lg-6 map-content-9">
                         <h5 className="mb-sm-4 mb-3">Drop Us a Line</h5>
-                        <form action="https://sendmail.w3layouts.com/submitForm" method="post">
+                        <form onSubmit={handleSubmit} method="post">
                             <div className="twice">
-                                <input type="text" className="form-control" name="w3lName" id="w3lName" placeholder="Name" required=""/>
+                                <input type="text" className="form-control" name="name" id="w3lName" placeholder="Name" value={formData.name}
+          onChange={handleChange} required />
                             </div>
                             <div className="twice">
-                                <input type="email" className="form-control" name="w3lSender" id="w3lSender" placeholder="Email" required=""/>
+                                <input type="email" className="form-control" name="email" id="w3lSender" placeholder="Email" value={formData.email}
+          onChange={handleChange} required />
                             </div>
                             <div className="twice">
-                                <input type="text" className="form-control" name="w3lSubject" id="w3lSubject" placeholder="Subject" required=""/>
+                                <input type="text" className="form-control" name="subject" id="w3lSubject" placeholder="Subject"  value={formData.subject}
+        onChange={handleChange} required />
                             </div>
-                            <textarea name="w3lMessage" className="form-control" id="w3lMessage" placeholder="Message" required=""></textarea>
+                            <textarea name="message" className="form-control" id="w3lMessage" placeholder="Message"  value={formData.message}
+        onChange={handleChange} required ></textarea>
                             <div className="w3lhny-submit text-right">
-                                <button type="submit" className="btn btn-primary btn-style mt-4">Send Message</button>
+                               <button
+  type="submit"
+  className="btn btn-primary btn-style mt-4"
+  disabled={message === 'Sending...'}
+>
+  {message === 'Sending...' ? 'Sending...' : 'Send Message'}
+</button>
                             </div>
+                            {message && <p className="mt-3 text-center">{message}</p>}
                         </form>
                     </div>
                 </div>

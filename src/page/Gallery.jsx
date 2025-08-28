@@ -22,7 +22,21 @@ function Gallery() {
                     <h6 className="title-subw3hny text-center">Gallery</h6>
                     <h3 className="title-w3l mb-5 text-center">Latest Projects Images</h3>
                 </div>
-                {/* <!--/grids-grids--> */}
+                
+                 <div className="wallppr-img ">
+        <div className="container">
+          <div className="row">
+            {Array.from({ length: 30 }, (_, index) => (
+              <div key={index} className="col-md-4 col-lg-4">
+                <div className="wal-img">
+                  <img src={`assets/images/eimg-${index + 1}.jpeg`} alt={`blind ${index + 1}`} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* <!--/grids-grids--> */}
                 <ul className="gallery_agile">
                     <li>
                         <div className="w3_agile_portfolio_grid">
@@ -59,7 +73,7 @@ function Gallery() {
                         </div>
                         <div className="w3_agile_portfolio_grid mt-4">
                             <a href="assets/images/ab3.jpg">
-                                <img src="assets/images/ab3.jpg" alt=" " className="img-fluid radius-image" />
+                                <img src="assets/images/fg-1.jpg" alt=" " className="img-fluid radius-image" />
                                 <div className="w3layouts_news_grid_pos">
                                     <div className="wthree_text">
                                         <h3><i className="fas fa-search"></i></h3>

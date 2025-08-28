@@ -1,6 +1,32 @@
-import React from 'react'
-
+import React, { useState } from 'react';
 function Footer() {
+    const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setMessage('Submitting...');
+
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        access_key: '684122e0-c7c5-46f7-b86c-c2ca69e86072', // Replace with your key
+        email: email,
+      }),
+    });
+
+    const result = await response.json();
+    if (result.success) {
+      setMessage('Thank you for subscribing!');
+      setEmail('');
+    } else {
+      setMessage('Something went wrong. Please try again.');
+    }
+  };
   return (
     <div>
       <footer className="w3l-footer-29-main">
@@ -10,9 +36,7 @@ function Footer() {
                     <div className="col-lg-4 footer-list-29 footer-1 pe-lg-5">
                         <h2><a className="navbar-brand" href="index.html">
                                 <span className="w3yellow">Mark</span>Wallpaper</a></h2>
-                        <p className="parahny pr-lg-5 mr-xl-4 mb-4">Lorem ipsum dolor sit, amet consectetur elit. Earum mollitia cum
-                            ex
-                            ipsam autem!earum sequi amet.
+                        <p className="parahny pr-lg-5 mr-xl-4 mb-4">MarkWallpaper is your trusted partner for wallpapers, wardrobes, blinds, and modular kitchens. We design interiors that are stylish, functional, and built to reflect your personality.
                         </p>
 
                     </div>
@@ -20,17 +44,18 @@ function Footer() {
                         <h6 className="footer-title-29">Quick Links</h6>
                         <div className="footer-listw3-grids">
                             <ul className="footer-listw3">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="Services.html">Services</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about-us">About</a></li>
+                                <li><a href="/services">Services</a></li>
+                                <li><a href="/contact">Contact</a></li>
 
                             </ul>
                             <ul className="footer-listw3">
-                                <li><a href="#privacy">Privacy Policy</a></li>
-                                <li><a href="#term">Terms of use</a></li>
-                                <li><a href="#sales">Sales and Refunds</a></li>
-                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="/wallpapaer">Wallpapaer</a></li>
+                                <li><a href="/blind">Blind</a></li>
+                                <li><a href="">Modular Kitchen</a></li>
+                                <li><a href="/faq">FAQ</a></li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -39,10 +64,11 @@ function Footer() {
                         <h6 className="footer-title-29">Keep Connected</h6>
                         <p>Get Updates By Subscribe Our Weekly Newsletter</p>
 
-                        <form action="#" className="subscribe" method="post">
-                            <input type="email" name="email" placeholder="Your Email Address" required=""/>
-                            <button><span className="fas fa-paper-plane"></span></button>
+                        <form onSubmit={handleSubmit} className="subscribe" method="post">
+                            <input type="email" name="email" placeholder="Your Email Address" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                            <button type="submit"><span className="fas fa-paper-plane"></span></button>
                         </form>
+                        {message && <p className="subscribe-message">{message}</p>}
                         <div className="main-social-footer-29 mt-4">
                             <a href="#facebook" className="facebook"><span className="fab fa-facebook-f"></span></a>
                             <a href="#twitter" className="twitter"><span className="fab fa-twitter"></span></a>
@@ -54,7 +80,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="bottom-copies text-center">
-                    <p className="copy-footer-29">© 2021 Intrados. All rights reserved .</p>
+                    <p className="copy-footer-29">© 2025 MarkWallpaperDesigner. All rights reserved .</p>
                 </div>
             </div>
         </div>
@@ -63,28 +89,7 @@ function Footer() {
         <button  id="movetop" title="Go to top">
             <span className="fa fa-angle-up"></span>
         </button>
-        {/* <script>
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {
-                scrollFunction()
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("movetop").style.display = "block";
-                } else {
-                    document.getElementById("movetop").style.display = "none";
-                }
-            }
-
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-
-        </script>
-        // <!-- //move top --> */}
+        
     </footer>
     </div>
   )

@@ -1,9 +1,12 @@
-import React  from 'react';
+import React, { useState } from 'react';
 import './Wallpapers.css'; // We'll create this CSS file next
 import { NavLink } from 'react-router-dom';
 import Contact from '../../Component/Contact';
 const Blinds = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
+  const openPopup = () => setIsOpen(true);
+  const closePopup = () => setIsOpen(false);
   return (
     <>
       <div className="inner-banner py-5">
@@ -13,7 +16,7 @@ const Blinds = () => {
               <ul className="breadcrumbs-custom-path">
                 <li><a href="index.html">Home</a></li>
                 <li className="active"><span className="fas fa-angle-double-right mx-2"></span> Services</li>
-                <li className="active"><span className="fas fa-angle-double-right mx-2"></span> Wallpaper</li>
+                <li className="active"><span className="fas fa-angle-double-right mx-2"></span> Blinds</li>
               </ul>
             </div>
           </div>
@@ -32,30 +35,22 @@ const Blinds = () => {
                   <li >
                     <NavLink to="/wallpapers">WALLPAPERS</NavLink>
                   </li>
+                  <li className="active">
+                    <NavLink to="/Blinds">BLINDS</NavLink>
+                  </li>
                   <li>
                     <NavLink to="/kidsroom">KIDSROOM</NavLink>
                   </li>
                   <li>
                     <NavLink to="/customized-wallpapers">CUSTOMIZED WALLPAPERS</NavLink>
-                  </li>
+                  </li>     
                   <li>
-                    <NavLink to="/pvc-walls">PVC WALLS PANEL</NavLink>
-                  </li>
+                  <NavLink to="/modular-kitchens">MODULAR KITCHENS</NavLink>
+                </li>
                   <li>
-                    <NavLink to="/pvc-ceiling">PVC CEILING PANEL</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/3d-foam-panel">3D FOAM PANEL</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/pvc-flooring">PVC FLOORING</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/wooden-flooring">WOODEN FLOORING</NavLink>
-                  </li>
-                  <li className="active">
-                    <NavLink to="/Blinds">BLINDS</NavLink>
-                  </li>
+                  <NavLink to="/wardrobe">WARDROBE</NavLink>
+                  </li>                            
+                  
                 </ul>
               </div>
             </aside>
@@ -63,9 +58,20 @@ const Blinds = () => {
           <div className="content-side col-lg-8 col-md-12 col-sm-12 " style={{ textAlign: "justify" }}>
             <div className="service-detail">
               <div className="inner-box ">
-                <div className="image-box" style={{ padding: "25px" }}>
-                  <img src="assets/images/sr23.jpg" alt="Wallpaper" />
-                </div>
+               <div className="image-box" style={{ padding: "25px" }}>
+  <img 
+    src="assets/images/interior.jpg" 
+    alt="Wallpaper" 
+    style={{ 
+      width: "100%", 
+      height: "auto", 
+      maxWidth: "100%", 
+      display: "block",
+      objectFit: "cover"
+    }} 
+  />
+</div>
+
                 <h2>Blinds</h2>
                 <div className="text" >
                   <p className="text-justify pt-3" >
@@ -109,6 +115,48 @@ const Blinds = () => {
         </div>
       </div>
     </div>
+    <section className="w3l-index5 py-5" id="video">
+      <div className="container py-5">
+        <div className="history-info align-self text-center py-md-5">
+          <div className="position-relative py-sm-5">
+            <button
+              onClick={openPopup}
+              className="play-view text-center position-absolute"
+              style={{
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                padding: 0,
+              }}
+            >
+              <span className="video-play-icon">
+                <span className="fa fa-play"></span>
+              </span>
+            </button>
+
+            {isOpen && (
+              <div className="video-modal-overlay">
+                <div className="video-modal-content">
+                  <button
+                    className="video-modal-close"
+                    onClick={closePopup}
+                  >
+                    &times;
+                  </button>
+                  <iframe
+                    src="assets/images/video-1.mp4"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                    title="Video"
+                  />
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
        <section className="testimonial-section-two">
         <div className="auto-container">
           <div className="sec-title">
@@ -117,37 +165,37 @@ const Blinds = () => {
         </div>
         <div className="auto-container">
           <div className="row">
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-2">
               <div className="srvce">
                 <img src="assets/images/curtains.jpg" alt="Curtains" />
                 <h4><a href="/">Curtains</a></h4>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-2">
               <div className="srvce">
                 <img src="assets/images/roller.jpg" alt="Roller" />
                 <h4><a href="/">Roller</a></h4>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-2">
               <div className="srvce sr-n-min-hgt-530">
                 <img src="assets/images/zebra.jpg" alt="Zebra" />
                 <h4><a href="/">Zebra</a></h4>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-2">
               <div className="srvce sr-n-min-hgt-530">
                 <img src="assets/images/roman.gif" alt="Roman" />
                 <h4><a href="/">Roman</a></h4>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-2">
               <div className="srvce sr-n-min-hgt-530">
                 <img src="assets/images/venetian.jpg" alt="Venetian" />
                 <h4><a href="/">Venetian</a></h4>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-2">
               <div className="srvce sr-n-min-hgt-530">
                 <img src="assets/images/pvc.jpg" alt="Customized Wallpaper" />
                 <h4><a href="/">PVC</a></h4>

@@ -19,7 +19,7 @@ const Wallpaper = () => {
           </div>
         </section>
       </div>
-       <div className="sidebar-page-container">
+       <div className="sidebar-page-container m-md-3">
       <div className="auto-container">
         <div className="row clearfix">
           <div className="sidebar-side col-lg-4 col-md-12 col-sm-12">
@@ -36,25 +36,16 @@ const Wallpaper = () => {
                     <NavLink to="/kidsroom">KIDSROOM</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/customized-wallpapers">CUSTOMIZED WALLPAPERS</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/pvc-walls">PVC WALLS PANEL</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/pvc-ceiling">PVC CEILING PANEL</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/3d-foam-panel">3D FOAM PANEL</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/pvc-flooring">PVC FLOORING</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/wooden-flooring">WOODEN FLOORING</NavLink>
-                  </li>
-                  <li>
                     <NavLink to="/Blinds">BLINDS</NavLink>
+                  </li>
+                  <li>
+                     <NavLink to="/customized-wallpapers">CUSTOMIZED WALLPAPERS</NavLink>
+                   </li>
+                  <li>
+                    <NavLink to="/modular-kitchens">MODULAR KITCHENS</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/wardrobe">WARDROBE</NavLink>
                   </li>
                 </ul>
               </div>
@@ -64,8 +55,19 @@ const Wallpaper = () => {
             <div className="service-detail">
               <div className="inner-box ">
                 <div className="image-box" style={{ padding: "25px" }}>
-                  <img src="assets/images/sr25.png" alt="Wallpaper" />
-                </div>
+  <img 
+    src="assets/images/sr25.png" 
+    alt="Wallpaper" 
+    style={{ 
+      width: "100%", 
+      height: "auto", 
+      maxWidth: "100%", 
+      display: "block",
+      objectFit: "cover"
+    }} 
+  />
+</div>
+
                 <h2>Imported Wallpapers Dealer & Supplier</h2>
                 <div className="text" >
                   <p className="text-justify pt-3" >

@@ -4,7 +4,7 @@ function Step() {
   return (
     <div>
       {/* <!-- features section --> */}  
-    <section className="w3l-features py-5" id="work">
+    <section className="w3l-features py-3" id="work">
         <div className="container py-lg-5 py-md-4 py-2">
             <div className="title-content text-center mb-md-5 mb-4">
                 <h6 className="title-subw3hny mb-1">Intro</h6>

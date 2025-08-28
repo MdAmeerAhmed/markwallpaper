@@ -2,9 +2,11 @@ import { useEffect } from "react";
 import Contact from './Contact.jsx';
 import WallpaperCostCalculator from './WallpaperCostCalculator';
 import { NavLink } from 'react-router-dom';
+import VideoPopup from "./VideoPopup.jsx";
 
 
 function Home() {
+    
   useEffect(() => {
     if (window.$) {
       // Initialize the first carousel
@@ -152,12 +154,12 @@ function Home() {
                 <div className="col-lg-6 pe-lg-5">
                     <div className="title-content text-left">
                         <h6 className="title-subw3hny mb-1">About Us</h6>
-                        <h3 className="title-w3l">We provide you the quality with perfect credibility </h3>
+                        <h3 className="title-w3l">Quality services in Hyderabad with perfect credibility. </h3>
                     </div>
                 </div>
                 <div className="col-lg-6 mt-lg-0 mt-md-5 mt-4 ps-lg-5">
 
-                    <p className="pr-lg-5">We deliver premium quality wallpapers with unmatched credibility, ensuring every design transforms your space into a masterpiece.</p>
+                    <p className="pr-lg-5">We deliver premium-quality wallpapers with unmatched credibility, blending elegance, durability, and creativity to ensure every design transforms your walls into timeless masterpieces. Our commitment to excellence guarantees that your space not only looks stunning but also reflects your unique personality and style.</p>
                 </div>
             </div>
             {/* <!--//row-1--> */}
@@ -199,7 +201,7 @@ function Home() {
                 <div className="row w3l-passion-mid-grids">
                     <div className="col-lg-6 passion-grid-item-info pe-lg-5 mb-lg-0 mb-5">
 
-                        <div className="content-8-img"><img src="assets/images/ab1.jpg" className="img-fluid radius-image" alt=""/></div>
+                        <div className="content-8-img"><img src="assets/images/ab2.jpg" className="img-fluid radius-image" alt=""/></div>
                     </div>
                    <div className="col-lg-6 w3hny-passion-item w3l-content-8" >
     <h6 className="title-subw3hny mb-1">ELEVATE YOUR SPACES WITH DESIGNER WALLPAPERS</h6>
@@ -236,7 +238,7 @@ function Home() {
         </li>
     </ul>
     <div className="w3banner-content-btns">
-        <a href="about.html" className="btn btn-style btn-primary mt-lg-5 mt-4 me-2">SCHEDULE A CONSULTATION</a>
+        <a href="/contact" className="btn btn-style btn-primary mt-lg-5 mt-4 me-2">SCHEDULE A CONSULTATION</a>
     </div>
 </div>
                 </div>
@@ -244,26 +246,29 @@ function Home() {
             </div>
         </div>
     </section>
+ 
+        <div className="container py-md-5 py-2">
+            {/* <!--/row-1--> */}
+            <div className="row mb-5 pb-lg-4">
+                <div className="col-lg-6 pe-lg-5">
+                    <div className="title-content text-left">
+                        <h3 className="title-w3l">Wallpaper and Wallpaper Installation Services in Hyderabad. </h3>
+                    </div>
+                </div>
+                <div className="col-lg-6 mt-lg-0 mt-md-5 mt-4 ps-lg-5">
+
+                    <p className="pr-lg-5">Book online Wallpaper and Wallpaper Installation Services in Hyderabad, Mark Wallpaper is a one of the best wallpaper services Near you in Hyderabad. we have new and trendy all types of wallpaper collection and best quality wallpapers available.</p>
+                </div>
+            </div>
+            {/* <!--//row-1--> */}
+            
+        </div>
+   
     {/* <!--//bottom-3-grids-->
 
        <!-- /home-page-video-popup--> */}
-    <section className="w3l-index5 py-5" id="video">
-        <div className="container py-5">
-            <div className="history-info align-self text-center py-md-5">
-                <div className="position-relative py-sm-5">
-                    <a href="#small-dialog1" className="popup-with-zoom-anim play-view text-center position-absolute">
-                        <span className="video-play-icon">
-                            <span className="fa fa-play"></span>
-                        </span>
-                    </a>
-                    {/* <!-- dialog itself, mfp-hide class is required to make dialog hidden --> */}
-                    <div id="small-dialog1" className="zoom-anim-dialog mfp-hide">
-                        <iframe src="https://player.vimeo.com/video/444201456" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="video"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+       <VideoPopup />
+    
     {/* <!-- //home-page-video-popup--> */}
             <WallpaperCostCalculator />
     {/* <!--/w3-grids--> */}
@@ -273,21 +278,19 @@ function Home() {
                 <div className="row w3l-passion-mid-grids">
                     <div className="col-lg-6 passion-grid-item-info pe-lg-5 mb-lg-0 mb-5">
 
-                        <div className="content-8-img"><img src="assets/images/ab1.jpg" className="img-fluid radius-image" alt="Offer"/></div>
+                        <div className="content-8-img"><img src="assets/images/wd4.jpg" className="img-fluid radius-image" alt="Offer"/></div>
                     </div>
                     <div className="col-lg-6 w3hny-passion-item w3l-content-8">
                         <h6 className="title-subw3hny mb-1">What We Offer</h6>
-                        <h3 className="title-w3l mb-3">The Luxury Apartment of sepcial interiors.</h3>
-                        <p className="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla non ipsum soluta
-                            perferendis
-                            veniam qui esse magnam commodi quisquam vitae labore nemo at voluptatem.</p>
+                        <h3 className="title-w3l mb-3">The Luxury World of Wallpaper Designs.</h3>
+                        <p className="mb-5">Discover a stunning collection of premium wallpapers that bring elegance and character to every space. From modern patterns to classic textures, our designs transform ordinary walls into extraordinary works of art.</p>
                         <ul className="w3-list-icons-grids">
                             <li className="icon-list-item-gd">
                                 <div className="icon-gd"><i aria-hidden="true" className="fas fa-hotel"></i>
                                 </div>
                                 <div className="icon-inf">
                                     <h5>Residential</h5>
-                                    <p className="text-para">Lorem ipsum dolor sit amet, elit. </p>
+                                    <p className="text-para">Stylish wallpapers to beautify your home. </p>
                                 </div>
                             </li>
                             <li className="icon-list-item-gd">
@@ -295,7 +298,7 @@ function Home() {
                                 </div>
                                 <div className="icon-inf">
                                     <h5>Commercial</h5>
-                                    <p className="text-para">Lorem ipsum dolor sit amet, elit. </p>
+                                    <p className="text-para">Elegant designs for showrooms and retail spaces. </p>
                                 </div>
                             </li>
                             <li className="icon-list-item-gd">
@@ -303,7 +306,7 @@ function Home() {
                                 </div>
                                 <div className="icon-inf">
                                     <h5>Industries</h5>
-                                    <p className="text-para">Lorem ipsum dolor sit amet, elit. </p>
+                                    <p className="text-para">Durable wallpapers with a creative touch. </p>
                                 </div>
                             </li>
                             <li className="icon-list-item-gd">
@@ -311,14 +314,39 @@ function Home() {
                                 </div>
                                 <div className="icon-inf">
                                     <h5>Office</h5>
-                                    <p className="text-para">Lorem ipsum dolor sit amet, elit. </p>
+                                    <p className="text-para">Professional designs that inspire productivity. </p>
                                 </div>
                             </li>
                         </ul>
                         <div className="w3banner-content-btns">
-                            <a href="about.html" className="btn btn-style btn-primary mt-lg-5 mt-4 me-2">Read More </a>
+                            <a href="/about-us" className="btn btn-style btn-primary mt-lg-5 mt-4 me-2">Read More </a>
 
                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section className="w3l-passion-mid-sec py-5">
+        <div className="container py-md-5 py-3">
+            <div className="container">
+                <div className="row w3l-passion-mid-grids">
+                    
+                    <div className="col-lg-6 w3hny-passion-item w3l-content-8">
+                        <h6 className="title-subw3hny mb-1">Mordern Modular Kitchen</h6>
+                        <h3 className="title-w3l mb-3">The Luxury World of Modular Kitchen Designs.</h3>
+                        <p className="mb-5">At Mark Wallpaper, we specialize in creating modular kitchens that perfectly balance style, comfort, and functionality. Every design is thoughtfully planned to make the most of your space, ensuring convenience and elegance go hand in hand.</p>
+                        <p>No two homes are the same — and neither should your kitchen be. Our customized modular kitchens are designed to fit your lifestyle, cooking needs, and personal taste. Whether you prefer a sleek modern look or a warm traditional style, we’ve got you covered.</p>
+                         
+                        <div className="w3banner-content-btns">
+                            <a href="/modular-kitchens " className="btn btn-style btn-primary mt-lg-5 mt-4 me-2">Read More </a>
+
+                        </div>
+                    </div>
+                    <div className="col-lg-6 passion-grid-item-info pe-lg-5 mb-lg-0 mb-5">
+
+                        <div className="content-8-img"><img src="assets/images/kitchen-design.jpg" className="img-fluid radius-image" alt="Offer"/></div>
                     </div>
                 </div>
 
@@ -338,8 +366,8 @@ function Home() {
                 <ul className="gallery_agile">
                     <li>
                         <div className="w3_agile_portfolio_grid">
-                            <a href="assets/images/ab1.jpg">
-                                <img src="assets/images/ab1.jpg" alt=" " className="img-fluid radius-image" />
+                            <a href="assets/images/fg-1.jpg">
+                                <img src="assets/images/fg-1.jpg" alt=" " className="img-fluid radius-image" />
                                 <div className="w3layouts_news_grid_pos">
                                     <div className="wthree_text">
                                         <h3><i className="fas fa-search"></i></h3>
@@ -361,7 +389,7 @@ function Home() {
                     <li>
                         <div className="w3_agile_portfolio_grid">
                             <a href="assets/images/g3.jpg">
-                                <img src="assets/images/g3.jpg" alt=" " className="img-fluid radius-image" />
+                                <img src="assets/images/ab2.jpg" alt=" " className="img-fluid radius-image" />
                                 <div className="w3layouts_news_grid_pos">
                                     <div className="wthree_text">
                                         <h3><i className="fas fa-search"></i></h3>
@@ -371,7 +399,7 @@ function Home() {
                         </div>
                         <div className="w3_agile_portfolio_grid mt-4">
                             <a href="assets/images/ab3.jpg">
-                                <img src="assets/images/ab3.jpg" alt=" " className="img-fluid radius-image" />
+                                <img src="assets/images/fg-3.jpg" alt=" " className="img-fluid radius-image" />
                                 <div className="w3layouts_news_grid_pos">
                                     <div className="wthree_text">
                                         <h3><i className="fas fa-search"></i></h3>
@@ -383,7 +411,7 @@ function Home() {
                     <li>
                         <div className="w3_agile_portfolio_grid">
                             <a href="assets/images/g2.jpg">
-                                <img src="assets/images/g2.jpg" alt=" " className="img-fluid radius-image" />
+                                <img src="assets/images/fg-2.jpg" alt=" " className="img-fluid radius-image" />
                                 <div className="w3layouts_news_grid_pos">
                                     <div className="wthree_text">
                                         <h3><i className="fas fa-search"></i></h3>
@@ -393,7 +421,7 @@ function Home() {
                         </div>
                         <div className="w3_agile_portfolio_grid mt-4">
                             <a href="assets/images/ab2.jpg">
-                                <img src="assets/images/ab2.jpg" alt=" " className="img-fluid radius-image" />
+                                <img src="assets/images/g3.jpg" alt=" " className="img-fluid radius-image" />
                                 <div className="w3layouts_news_grid_pos">
                                     <div className="wthree_text">
                                         <h3><i className="fas fa-search"></i></h3>
@@ -415,18 +443,16 @@ function Home() {
             <div className="row">
                 <div className="col-lg-5 title-content text-left pe-lg-5 mb-lg-0 mb-5">
                     <h6 className="title-subw3hny mb-1">Stats</h6>
-                    <h3 className="title-w3l mb-3">Modern Of Living</h3>
-                    <p className="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla non ipsum soluta
-                        perferendis
-                        veniam qui esse magnam commodi quisquam vitae labore nemo at voluptatem.</p>
+                    <h3 className="title-w3l mb-3">Modern Living Through Wallpaper Design</h3>
+                    <p className="mb-5">We take pride in delivering creative wallpaper solutions that enhance spaces and redefine interiors with elegance and durability.</p>
                     <div className="row w3l-stats-section stats-con mt-4" id="stats">
                         <div className="col-6 stats_info counter_grid">
-                            <p className="counter">1500 </p>
+                            <p className="counter">10+ </p>
                             <h3>PRojects</h3>
                         </div>
                         <div className="col-6 stats_info counter_grid">
-                            <p className="counter">2360</p>
-                            <h3>Awards</h3>
+                            <p className="counter">75+</p>
+                            <h3>Happy Clients </h3>
                         </div>
 
                     </div>
@@ -485,15 +511,32 @@ function Home() {
                         <div className="card">
                             <div className="card-header p-0 position-relative border-0">
                                 <a href="blog-single.html">
-                                    <img className="card-img-bottom d-block radius-image" src="assets/images/g7.jpg" alt="Decorative card illustration"/>
+                                    <img className="card-img-bottom d-block radius-image" src="assets/images/g6.jpg" alt="Decorative card illustration"/>
                                 </a>
                             </div>
                             <div className="card-body p-0 blog-details">
                                 <h6 className="mt-4">July 12, 2021</h6>
                                 <a href="#admin" className="admin">- by Admin </a>
                                 <br/>
-                                <a href="blog-single.html" className="blog-desc blog-desc-2">Train yourself for the practice of interior design </a>
-                                <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula</p>
+                                <a href="blog-single.html" className="blog-desc blog-desc-2">Modern Modular Kitchen Installation Completed </a>
+                                <p>At Mark Wallpaper, we successfully delivered a stylish and fully customized modular kitchen project for one of our clients.  </p>
+                                <a href="blog-single.html" className="btn btn-style btn-primary mt-lg-4 mt-4">Read More </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 item mt-5">
+                        <div className="card">
+                            <div className="card-header p-0 position-relative border-0">
+                                <a href="blog-single.html">
+                                    <img className="card-img-bottom d-block radius-image" src="assets/images/g7.jpg" alt="Card cap"/>
+                                </a>
+                            </div>
+                            <div className="card-body p-0 blog-details">
+                                <h6 className="mt-4">July 22, 2021</h6>
+                                <a href="#admin" className="admin">- by Admin </a>
+                                <br/>
+                                <a href="blog-single.html" className="blog-desc blog-desc-2">Kids Room Project </a>
+                                <p>Our team completed a vibrant kids’ room wallpaper installation in Hyderabad. With colorful and creative cartoon-themed designs, room  inspires joy, fun, and for little ones.</p>
                                 <a href="blog-single.html" className="btn btn-style btn-primary mt-lg-4 mt-4">Read More </a>
                             </div>
                         </div>
@@ -506,28 +549,11 @@ function Home() {
                                 </a>
                             </div>
                             <div className="card-body p-0 blog-details">
-                                <h6 className="mt-4">July 22, 2021</h6>
-                                <a href="#admin" className="admin">- by Admin </a>
-                                <br/>
-                                <a href="blog-single.html" className="blog-desc blog-desc-2">Choose the style, we complete with our file </a>
-                                <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula</p>
-                                <a href="blog-single.html" className="btn btn-style btn-primary mt-lg-4 mt-4">Read More </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 item mt-5">
-                        <div className="card">
-                            <div className="card-header p-0 position-relative border-0">
-                                <a href="blog-single.html">
-                                    <img className="card-img-bottom d-block radius-image" src="assets/images/g6.jpg" alt="Card cap"/>
-                                </a>
-                            </div>
-                            <div className="card-body p-0 blog-details">
                                 <h6 className="mt-4">July 25, 2021</h6>
                                 <a href="#admin" className="admin">- by Admin </a>
                                 <br/>
-                                <a href="blog-single.html" className="blog-desc blog-desc-2">Train yourself for the practice of interior design </a>
-                                <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula</p>
+                                <a href="blog-single.html" className="blog-desc blog-desc-2">Customized Wallpaper Installation Completed </a>
+                                <p>At Mark Wallpaper, we recently completed a premium wallpaper project, transforming a living room with elegant, high-quality designs.</p>
                                 <a href="blog-single.html" className="btn btn-style btn-primary mt-lg-4 mt-4">Read More </a>
                             </div>
                         </div>
@@ -550,9 +576,7 @@ function Home() {
                                 <h5 className="title-subw3hny mb-3">Invite Your Friends</h5>
                                 <h3 className="title-w3l mb-3">Refer and Get Free Services
                                 </h3>
-                                <p>Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit
-                                    amet. Lorem ipsum
-                                    dolor sit amet elit.</p>
+                                <p>Share the experience with your friends! Invite them to choose our premium wallpapers, and enjoy exclusive free services as a reward for every successful referral.</p>
                             </div>
                         </div>
                     </div>

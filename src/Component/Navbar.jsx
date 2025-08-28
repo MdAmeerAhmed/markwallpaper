@@ -3,7 +3,20 @@ import $ from 'jquery';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-      const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', dimensions: '', message: '', }); 
+  const [message, setMessage] = useState(''); 
+  const handleChange = (e) => { setFormData({ ...formData, [e.target.name]: e.target.value, }); }; 
+  const handleSubmit = async (e) => { e.preventDefault(); setMessage('Sending...'); 
+    const response = await fetch('https://api.web3forms.com/submit', 
+      { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json', },
+       body: JSON.stringify({ access_key: 'b4a93a12-78c8-4729-b1f7-ef32636d281a',
+         name: formData.name, email: formData.email, phone: formData.phone, dimensions: formData.dimensions, message: formData.message, }), });
+          const result = await response.json(); 
+          if (result.success) 
+            { setMessage('Message sent successfully!'); setFormData({ name: '', email: '', phone: '', dimensions: '', message: '' }); }
+           else
+             { setMessage('Something went wrong. Please try again.'); } };
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
   useEffect(() => {
     // Apply the theme to the document element
@@ -67,7 +80,7 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light stroke py-lg-0">
           <h1>
-            <a className="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
+            <a className="navbar-brand pe-xl-5 pe-lg-4" href="/">
               <span className="w3yellow">Mark</span>Wallpaper
             </a>
           </h1>
@@ -77,71 +90,72 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarScroll">
             <ul className="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
-  <li className="nav-item">
-    <NavLink className="nav-link" to="/" end>
-      Home
-    </NavLink>
-  </li>
-  <li className="nav-item">
-    <NavLink className="nav-link" to="/about-us">
-      About
-    </NavLink>
-  </li>
-  <li className="nav-item">
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/" end>
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/about-us">
+                  About
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink className="nav-link" to="/services">Services</NavLink>
               </li>
-  <li className="nav-item">
+              <li className="nav-item">
                 <NavLink className="nav-link" to="/project">project</NavLink>
               </li>
-            <li className="nav-item">
+              <li className="nav-item">
                 <NavLink className="nav-link" to="/gallery">Gallery</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/faq">FAQ</NavLink>
               </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">
-                Contact
-              </NavLink>
-            </li>
-</ul>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/contact">
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
 
             <ul className="header-search me-lg-4">
               <li className="search-right">
                 <a href="#search" className="btn btn-style btn-primary search-btn" title="search">
-                     Get Qutation
+                  Get Qutation
                 </a>
                 <div id="search" className="pop-overlay">
                   <div className="popup">
                     <h3 className="title-w3l two mb-4">Get Quote</h3>
-                    <form action="error.html" method="GET" className="search-box">
-                     <div className="mb-3">
-    <label className="form-label">Full Name</label>
-    <input type="text" className="form-control" placeholder="Enter your name" required/>
-  </div>
-  
-  <div className="mb-3">
-    <label className="form-label">Email Address</label>
-    <input type="email" className="form-control" placeholder="Enter your email" required/>
-  </div>
-  
-  <div className="mb-3">
-    <label className="form-label">Phone Number</label>
-    <input type="tel" className="form-control" placeholder="Enter your phone number" required/>
-  </div>
-  
-  <div className="mb-3">
-    <label className="form-label">Wallpaper Dimensions</label>
-    <input type="text" className="form-control" placeholder="e.g. 12ft x 10ft" required />
-  </div>
-  
-  <div className="mb-3">
-    <label className="form-label">Design Preference</label>
-    <textarea className="form-control" placeholder="Describe the style or theme you want" rows="3"></textarea>
-  </div>
+                    <form  onSubmit={handleSubmit} method="post" className="search-box">
+                      <div className="mb-3">
+                        <label className="form-label">Full Name</label>
+                        <input type="text" className="form-control" placeholder="Enter your name" name="name" value={formData.name}  onChange={handleChange} required />
+                      </div>
+
+                      <div className="mb-3">
+                        <label className="form-label">Email Address</label>
+                        <input type="email" className="form-control" placeholder="Enter your email" name="email" value={formData.email}        onChange={handleChange} required />
+                      </div>
+
+                      <div className="mb-3">
+                        <label className="form-label">Phone Number</label>
+                        <input type="tel" className="form-control" placeholder="Enter your phone number" name="phone"  value={formData.phone}          onChange={handleChange} required />
+                      </div>
+
+                      <div className="mb-3">
+                        <label className="form-label">Wallpaper Dimensions</label>
+                        <input type="text" className="form-control" placeholder="e.g. 12ft x 10ft" value={formData.dimensions}    name="dimensions"      onChange={handleChange} required />
+                      </div>
+
+                      <div className="mb-3">
+                        <label className="form-label">Design Preference</label>
+                        <textarea className="form-control" value={formData.message}   name="message"  onChange={handleChange} placeholder="Describe the style or theme you want" rows="3"></textarea>
+                      </div>
                       <button type="submit" className="btn">Get Quotation</button>
+                      {message && <p className="mt-3 text-center">{message}</p>}
                     </form>
-                    
+
                   </div>
                   <a className="close" href="#close">×</a>
                 </div>
@@ -153,11 +167,11 @@ const Navbar = () => {
               <div className="theme-switch-wrapper">
                 <label className="theme-switch" htmlFor="checkbox">
                   <input
-          type="checkbox"
-          id="checkbox"
-          checked={theme === 'dark'}
-          onChange={switchTheme}
-        />
+                    type="checkbox"
+                    id="checkbox"
+                    checked={theme === 'dark'}
+                    onChange={switchTheme}
+                  />
                   <div className="mode-container">
                     <i className="gg-sun"></i>
                     <i className="gg-moon"></i>
