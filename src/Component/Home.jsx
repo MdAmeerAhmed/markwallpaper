@@ -91,7 +91,7 @@ function Home() {
                             <h5>TRANSFORM YOUR SPACES WITH ELEGANCE</h5>
                             <h3 className="title-hero-19 text-info">Premium Wallpaper Installation In Hyderabad</h3>
                             <h5>Expert wallpaper suppliers in Hyderabad offering professional installation services with extensive design collection for homes and offices.</h5>
-                            <a href="about.html" className="btn btn-style btn-banner mt-sm-5 mt-4">Read More </a>
+                            <NavLink to="/about-us" className="btn btn-style btn-banner mt-sm-5 mt-4">Read More </NavLink>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@ function Home() {
                             <h5 className="text-uppercase">CRAFTING STUNNING WALL STORIES</h5>
                             <h3 className="title-hero-19 text-info">Designer Wallpaper Solutions</h3>
                             <h5>Professional wallpaper for home wall in Hyderabad, bringing international designs and expert installation to transform your spaces.</h5>
-                            <a href="about.html" className="btn btn-style btn-banner mt-sm-5 mt-4">Read More </a>
+                            <NavLink to="/about-us" className="btn btn-style btn-banner mt-sm-5 mt-4">Read More </NavLink>
                         </div>
                     </div>
                 </div>
@@ -121,9 +121,9 @@ function Home() {
                     <h5>
                     From concept to completion — Hyderabad’s trusted wallpaper experts delivering bespoke designs, premium materials, and flawless installation for homes and offices.
                     </h5>
-                    <a href="about.html" className="btn btn-style btn-banner mt-sm-5 mt-4">
+                    <NavLink to="/about-us" className="btn btn-style btn-banner mt-sm-5 mt-4">
                     Discover More
-                    </a>
+                    </NavLink>
                 </div>
                 </div>
                 </div>
@@ -137,7 +137,7 @@ function Home() {
                             <h5 className="text-uppercase">Elavate Every Wall With Style</h5>
                             <h3 className="title-hero-19 text-info">Bespoke Wallpaper Creations</h3>
                             <h5>Hyderabad’s trusted wallpaper experts delivering tailored designs, superior quality, and flawless installation for homes and offices.</h5>
-                            <a href="about.html" className="btn btn-style btn-banner mt-sm-5 mt-4">Read More </a>
+                            <NavLink to="/about-us" className="btn btn-style btn-banner mt-sm-5 mt-4">Read More </NavLink>
                         </div>
                     </div>
                 </div>
@@ -166,29 +166,29 @@ function Home() {
             <div className="row pt-md-0 pt-5">
                 <div className="col-lg-4 col-md-6 mt-md-0 mt-sm-4 px-lg-0">
                     <div className="grids3-info position-relative">
-                        <a href="/" className="d-block zoom"><img src="assets/images/g8.jpg" alt="" className="img-fluid news-image"/></a>
+                        <NavLink to="/" className="d-block zoom"><img src="assets/images/g8.jpg" alt="" className="img-fluid news-image"/></NavLink>
                         <div className="w3-grids3-info">
-                            <h6><a href="#category" className="category d-block">Living</a></h6>
-                            <h4><a href="/">Meet the new wallpaper artistry</a></h4>
+                            <h6><NavLink to="/" className="category d-block">Living</NavLink></h6>
+                            <h4><NavLink to="/">Meet the new wallpaper artistry</NavLink></h4>
                         </div>
                     </div>
                 </div>
                 <div className="col-lg-4 col-md-6 mt-md-0 mt-4 px-lg-0 grids3-info2">
                     <div className="grids3-info second position-relative">
-                        <a href="blog-single.html" className="d-block zoom"><img src="assets/images/g2.jpg" alt="" className="img-fluid news-image"/></a>
+                        <NavLink to="/" className="d-block zoom"><img src="assets/images/g2.jpg" alt="" className="img-fluid news-image"/></NavLink>
                         <div className="w3-grids3-info second">
-                            <h6><a href="#category" className="category d-block">Designs</a></h6>
-                            <h4><a href="/">Wallpapers that reflect your style</a></h4>
+                            <h6><NavLink to="/" className="category d-block">Designs</NavLink></h6>
+                            <h4><NavLink to="/">Wallpapers that reflect your style</NavLink ></h4>
 
                         </div>
                     </div>
                 </div>
                 <div className="col-lg-4 col-md-6 mt-lg-0 mt-4 px-lg-0">
                     <div className="grids3-info position-relative">
-                        <a href="blog-single.html" className="d-block zoom"><img src="assets/images/g4.jpg" alt="" className="img-fluid news-image"/></a>
+                        <NavLink to="/" className="d-block zoom"><img src="assets/images/g4.jpg" alt="" className="img-fluid news-image"/></NavLink>
                         <div className="w3-grids3-info">
-                            <h6><a href="/" className="category d-block">Innovative</a></h6>
-                            <h4><a href="/">Innovative wallpaper ideas for every space</a></h4>
+                            <h6><NavLink to="/" className="category d-block">Innovative</NavLink></h6>
+                            <h4><NavLink to="/">Innovative wallpaper ideas for every space</NavLink></h4>
                         </div>
                     </div>
                 </div>
@@ -238,7 +238,7 @@ function Home() {
         </li>
     </ul>
     <div className="w3banner-content-btns">
-        <a href="/contact" className="btn btn-style btn-primary mt-lg-5 mt-4 me-2">SCHEDULE A CONSULTATION</a>
+        <NavLink to="/contact" className="btn btn-style btn-primary mt-lg-5 mt-4 me-2">SCHEDULE A CONSULTATION</NavLink>
     </div>
 </div>
                 </div>
@@ -319,7 +319,7 @@ function Home() {
                             </li>
                         </ul>
                         <div className="w3banner-content-btns">
-                            <a href="/about-us" className="btn btn-style btn-primary mt-lg-5 mt-4 me-2">Read More </a>
+                            <NavLink to="/about-us" className="btn btn-style btn-primary mt-lg-5 mt-4 me-2">Read More </NavLink>
 
                         </div>
                     </div>
@@ -340,7 +340,7 @@ function Home() {
                         <p>No two homes are the same — and neither should your kitchen be. Our customized modular kitchens are designed to fit your lifestyle, cooking needs, and personal taste. Whether you prefer a sleek modern look or a warm traditional style, we’ve got you covered.</p>
                          
                         <div className="w3banner-content-btns">
-                            <a href="/modular-kitchens " className="btn btn-style btn-primary mt-lg-5 mt-4 me-2">Read More </a>
+                            <NavLink to="/modular-kitchens " className="btn btn-style btn-primary mt-lg-5 mt-4 me-2">Read More </NavLink>
 
                         </div>
                     </div>
@@ -378,7 +378,7 @@ function Home() {
       </div>
                 {/* <!--//rids-grids--> */}
                 <div className="w3banner-content-btns " style={{ textAlign: 'center' }}>
-                            <a href="/gallery " className="btn btn-style btn-primary mt-lg-5 mt-4 me-2"> More </a>
+                            <NavLink to="/gallery " className="btn btn-style btn-primary mt-lg-5 mt-4 me-2"> More </NavLink>
 
                         </div>
             </div>
@@ -459,51 +459,51 @@ function Home() {
                     <div className="col-lg-4 item mt-5">
                         <div className="card">
                             <div className="card-header p-0 position-relative border-0">
-                                <a href="blog-single.html">
+                                <NavLink to="/">
                                     <img className="card-img-bottom d-block radius-image" src="assets/images/g6.jpg" alt="Decorative card illustration"/>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="card-body p-0 blog-details">
                                 <h6 className="mt-4">July 12, 2021</h6>
-                                <a href="#admin" className="admin">- by Admin </a>
+                                <NavLink to="/" className="admin">- by Admin </NavLink>
                                 <br/>
-                                <a href="blog-single.html" className="blog-desc blog-desc-2">Modern Modular Kitchen Installation Completed </a>
+                                <NavLink to="/" className="blog-desc blog-desc-2">Modern Modular Kitchen Installation Completed </NavLink>
                                 <p>At Mark Wallpaper, we successfully delivered a stylish and fully customized modular kitchen project for one of our clients.  </p>
-                                <a href="blog-single.html" className="btn btn-style btn-primary mt-lg-4 mt-4">Read More </a>
+                                <NavLink to="/" className="btn btn-style btn-primary mt-lg-4 mt-4">Read More </NavLink>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 item mt-5">
                         <div className="card">
                             <div className="card-header p-0 position-relative border-0">
-                                <a href="blog-single.html">
+                                <NavLink to="/">
                                     <img className="card-img-bottom d-block radius-image" src="assets/images/g7.jpg" alt="Card cap"/>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="card-body p-0 blog-details">
                                 <h6 className="mt-4">July 22, 2021</h6>
-                                <a href="#admin" className="admin">- by Admin </a>
+                                <NavLink to="/" className="admin">- by Admin </NavLink >
                                 <br/>
-                                <a href="blog-single.html" className="blog-desc blog-desc-2">Kids Room Project </a>
+                                <NavLink to="/" className="blog-desc blog-desc-2">Kids Room Project </NavLink>
                                 <p>Our team completed a vibrant kids’ room wallpaper installation in Hyderabad. With colorful and creative cartoon-themed designs, room  inspires joy, fun, and for little ones.</p>
-                                <a href="blog-single.html" className="btn btn-style btn-primary mt-lg-4 mt-4">Read More </a>
+                                <NavLink to="/" className="btn btn-style btn-primary mt-lg-4 mt-4">Read More </NavLink >
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 item mt-5">
                         <div className="card">
                             <div className="card-header p-0 position-relative border-0">
-                                <a href="blog-single.html">
+                                <NavLink to="/">
                                     <img className="card-img-bottom d-block radius-image" src="assets/images/g8.jpg" alt="Card cap"/>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="card-body p-0 blog-details">
                                 <h6 className="mt-4">July 25, 2021</h6>
-                                <a href="#admin" className="admin">- by Admin </a>
+                                <NavLink to="/" className="admin">- by Admin </NavLink>
                                 <br/>
-                                <a href="blog-single.html" className="blog-desc blog-desc-2">Customized Wallpaper Installation Completed </a>
+                                <NavLink to="" className="blog-desc blog-desc-2">Customized Wallpaper Installation Completed </NavLink>
                                 <p>At Mark Wallpaper, we recently completed a premium wallpaper project, transforming a living room with elegant, high-quality designs.</p>
-                                <a href="blog-single.html" className="btn btn-style btn-primary mt-lg-4 mt-4">Read More </a>
+                                <NavLink to="/" className="btn btn-style btn-primary mt-lg-4 mt-4">Read More </NavLink>
                             </div>
                         </div>
                     </div>
