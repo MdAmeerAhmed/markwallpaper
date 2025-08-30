@@ -363,75 +363,24 @@ function Home() {
                     <h3 className="title-w3l mb-5 text-center">Latest Projects</h3>
                 </div>
                 {/* <!--/grids-grids--> */}
-                <ul className="gallery_agile">
-                    <li>
-                        <div className="w3_agile_portfolio_grid">
-                            <a href="assets/images/fg-1.jpg">
-                                <img src="assets/images/fg-1.jpg" alt=" " className="img-fluid radius-image" />
-                                <div className="w3layouts_news_grid_pos">
-                                    <div className="wthree_text">
-                                        <h3><i className="fas fa-search"></i></h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="w3_agile_portfolio_grid mt-4">
-                            <a href="assets/images/g4.jpg">
-                                <img src="assets/images/g4.jpg" alt=" " className="img-fluid radius-image" />
-                                <div className="w3layouts_news_grid_pos">
-                                    <div className="wthree_text">
-                                        <h3><i className="fas fa-search"></i></h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="w3_agile_portfolio_grid">
-                            <a href="assets/images/g3.jpg">
-                                <img src="assets/images/ab2.jpg" alt=" " className="img-fluid radius-image" />
-                                <div className="w3layouts_news_grid_pos">
-                                    <div className="wthree_text">
-                                        <h3><i className="fas fa-search"></i></h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="w3_agile_portfolio_grid mt-4">
-                            <a href="assets/images/ab3.jpg">
-                                <img src="assets/images/fg-3.jpg" alt=" " className="img-fluid radius-image" />
-                                <div className="w3layouts_news_grid_pos">
-                                    <div className="wthree_text">
-                                        <h3><i className="fas fa-search"></i></h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="w3_agile_portfolio_grid">
-                            <a href="assets/images/g2.jpg">
-                                <img src="assets/images/fg-2.jpg" alt=" " className="img-fluid radius-image" />
-                                <div className="w3layouts_news_grid_pos">
-                                    <div className="wthree_text">
-                                        <h3><i className="fas fa-search"></i></h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="w3_agile_portfolio_grid mt-4">
-                            <a href="assets/images/ab2.jpg">
-                                <img src="assets/images/g3.jpg" alt=" " className="img-fluid radius-image" />
-                                <div className="w3layouts_news_grid_pos">
-                                    <div className="wthree_text">
-                                        <h3><i className="fas fa-search"></i></h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+               <div className="wallppr-img ">
+        <div className="container">
+          <div className="row">
+            {Array.from({ length: 9 }, (_, index) => (
+              <div key={index} className="col-md-4 col-lg-4">
+                <div className="wal-img">
+                  <img src={`assets/images/eimg-${index + 1}.jpeg`} alt={`blind ${index + 1}`} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
                 {/* <!--//rids-grids--> */}
+                <div className="w3banner-content-btns " style={{ textAlign: 'center' }}>
+                            <a href="/gallery " className="btn btn-style btn-primary mt-lg-5 mt-4 me-2"> More </a>
+
+                        </div>
             </div>
         </div>
     </section>
@@ -447,11 +396,11 @@ function Home() {
                     <p className="mb-5">We take pride in delivering creative wallpaper solutions that enhance spaces and redefine interiors with elegance and durability.</p>
                     <div className="row w3l-stats-section stats-con mt-4" id="stats">
                         <div className="col-6 stats_info counter_grid">
-                            <p className="counter">10+ </p>
+                            <p className="counter">70+ </p>
                             <h3>PRojects</h3>
                         </div>
                         <div className="col-6 stats_info counter_grid">
-                            <p className="counter">75+</p>
+                            <p className="counter">95+</p>
                             <h3>Happy Clients </h3>
                         </div>
 
