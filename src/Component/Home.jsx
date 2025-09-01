@@ -3,7 +3,7 @@ import Contact from './Contact.jsx';
 import WallpaperCostCalculator from './WallpaperCostCalculator';
 import { NavLink } from 'react-router-dom';
 import VideoPopup from "./VideoPopup.jsx";
-
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
 function Home() {
     
@@ -195,6 +195,7 @@ function Home() {
             </div>
         </div>
     </div>
+    
     <section className="w3l-passion-mid-sec ">
         <div className="container py-md-5 py-3">
             <div className="container">
@@ -246,7 +247,30 @@ function Home() {
             </div>
         </div>
     </section>
- 
+ <section className="w3l-passion-mid-sec ">
+        <div className="container py-md-5 py-3">
+            <div className="container">
+                <div className="row w3l-passion-mid-grids">
+                    
+                   <div className="col-lg-12 text-center w3hny-passion-item w3l-content-8" >
+    <h6 className="title-subw3hny mb-1">Our Work</h6>
+    <h3 className="title-w3l mb-3">Transforming Visions Into Reality</h3>
+    <p className="mb-5 ">
+        We take your ideas and turn them into extraordinary spaces. We ensure you get the best result from the first drawing to the final finish. Our work includes homes, offices, and more.
+    </p>
+   <ReactCompareSlider
+      itemOne={<ReactCompareSliderImage src="assets/images/wall-01.png"  alt="Image one" />}
+      itemTwo={<ReactCompareSliderImage src="assets/images/wall-02.png"  alt="Image two" />}
+    />
+    <div className="w3banner-content-btns">
+        <NavLink to="/contact" className="btn btn-style btn-primary mt-lg-5 mt-4 me-2">SCHEDULE A CONSULTATION</NavLink>
+    </div>
+</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
         <div className="container py-md-5 py-2">
             {/* <!--/row-1--> */}
             <div className="row mb-5 pb-lg-4">
